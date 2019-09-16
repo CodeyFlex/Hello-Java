@@ -1,7 +1,13 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+//Java Util Scanner is necessary for the user input function to work.
+
 class MyClass {
   public static void main(String[ ] args) {
 
-    System.out.println("Hey world, i like water.");
+    System.out.println("Hey world, i like swimming.");
   //}
 //} This has been commented so i can continue the function further down.
 
@@ -25,8 +31,39 @@ here goes...
     double score =658.9;
     char group = 'H';
     System.out.println(name + " is " + age + " years old & has score: " + score + " in group " + group );
-  }
-}
+
+    //input from the user
+
+    Scanner s = new Scanner(System.in);
+    System.out.println("Write your input");
+    String input = s.next();
+    System.out.println("You have written: " + input);
+
 
 //Boolean online = True
 //Above boolean doesn't work right now, but is an example of a true/false function, which is what a Boolean is.
+
+//Public Classes can be accessed by entire project
+//Private can only be accessed by code inside same Class
+//Protected Classes can only be accessed by functions inside the same folder
+
+//The math operators are as follows:
+//+ addition
+//- subtraction
+//* multiplication
+/// division
+//% modulo
+
+//I can use these by writing the following function:
+
+int x = 2;
+int y = 5;
+  int result = x + y;
+    System.out.println("x + Y = ");
+          System.out.println(result);
+    int value = 23;
+    int res = value % 6;
+    System.out.println("Value % 6 = ");
+    System.out.println(res);
+    }
+  }
