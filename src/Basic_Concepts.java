@@ -133,5 +133,7 @@ String w = "World";
       System.out.println("My name is " + firstName +" "+lastName);
 
       //A char is a single letter
+      //Big first letter is a class, and small first letter is a variable or method.
+      //Static methods/variables gets directly added to the class calls
     }
   }
