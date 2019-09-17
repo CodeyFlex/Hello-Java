@@ -8,6 +8,7 @@ class MyClass {
   public static void main(String[ ] args) {
 
     System.out.println("Hey world, i like swimming.");
+      System.out.println(" "); //Space for fanciness
   //}
 //} This has been commented so i can continue the function further down.
 
@@ -34,6 +35,7 @@ here goes...
 
     //input from the user
 
+      System.out.println(" "); //Space for fanciness
     Scanner s = new Scanner(System.in);
     System.out.println("Write your input");
     String input = s.next();
@@ -56,27 +58,58 @@ here goes...
 
 //I can use these by writing the following function:
 
+      System.out.println(" "); //Space for fanciness
 int x = 2;
 int y = 5;
   int result = x + y;
     System.out.println("x + Y = ");
           System.out.println(result);
-    int value = 23;
+
+      System.out.println(" "); //Space for fanciness
+      int value = 23;
     int res = value % 6;
     System.out.println("Value % 6 = ");
     System.out.println(res);
 
+      System.out.println(" "); //Space for fanciness
       int incrementTest = 43;
       ++incrementTest; // incrementTest is now 44 because i wrote ++"IntegerName"
       System.out.println("The increment test is currently at: ");
       System.out.println(incrementTest);
       System.out.println("instead of 43 cause i wrote ++integerName");
 
+      System.out.println(" "); //Space for fanciness
       --incrementTest; // incrementTest is now 43 again because i wrote --"IntegerName"
       System.out.println("The increment test is currently at: ");
       System.out.println(incrementTest);
       System.out.println("instead of 44 cause i wrote --integerName");
 
-      System.out.println("If i instead write integerName-- it will decrease 1 number post decrease instsead of pre decrease. Same goes for writing ++");
+      System.out.println(" "); //Space for fanciness
+      System.out.println("If i instead write integerName-- it will decrease 1 number post decrease instead of pre decrease. Same goes for writing ++");
+
+      int num6 = 78;
+      int num7 = 12;
+      num6 += num7; // num7 = num6 + num7;
+      System.out.println(" "); //Space for fanciness
+      System.out.println("now i will add two integers to eachother with +=: num6 + num7 = ");
+      System.out.println(num6);
+      // num7 is 12 and num6 will become 90 instead of 78
+
+      //x+=y means x=x+y
+      //x-=y means x=x-y
+      //x*=y means x=x*y
+      //x/=y means x=x/y
+      //x%=y means x=x%y
+
+//Strings: Represents a sequence of characters
+      System.out.println(" "); //Space for fanciness
+      System.out.println("To display a string i will write: ");
+String w = "World";
+
+      String var;
+      var = "Hello ";
+      System.out.println(var);
+      System.out.println(w);
+      System.out.println("and this way i'm displaying a variable, and a string to put together the words: Hello World)");
     }
   }
