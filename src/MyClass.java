@@ -65,5 +65,18 @@ int y = 5;
     int res = value % 6;
     System.out.println("Value % 6 = ");
     System.out.println(res);
+
+      int incrementTest = 43;
+      ++incrementTest; // incrementTest is now 44 because i wrote ++"IntegerName"
+      System.out.println("The increment test is currently at: ");
+      System.out.println(incrementTest);
+      System.out.println("instead of 43 cause i wrote ++integerName");
+
+      --incrementTest; // incrementTest is now 43 again because i wrote --"IntegerName"
+      System.out.println("The increment test is currently at: ");
+      System.out.println(incrementTest);
+      System.out.println("instead of 44 cause i wrote --integerName");
+
+      System.out.println("If i instead write integerName-- it will decrease 1 number post decrease instsead of pre decrease. Same goes for writing ++");
     }
   }
