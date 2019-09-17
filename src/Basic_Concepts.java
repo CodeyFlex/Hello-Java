@@ -4,7 +4,7 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 //Java Util Scanner is necessary for the user input function to work.
 
-class MyClass {
+class Basic_Concepts {
   public static void main(String[ ] args) {
 
     System.out.println("Hey world, i like swimming.");
@@ -30,6 +30,7 @@ here goes...
     char group = 'H';
     System.out.println(name + " is " + age + " years old & has score: " + score + " in group " + group );
 
+    //"Import Java.Util.Scanner" at the top is critical for this function:
       System.out.println(" "); //Space for fanciness
       System.out.println("Input from the user");
     Scanner s = new Scanner(System.in);
@@ -53,7 +54,6 @@ here goes...
       //Read a boolean - nextBoolean()
       //Read a complete line - nextLine()
       //Read a word - next()
-
 
 //Boolean online = True
 //Above boolean doesn't work right now, but is an example of a true/false function, which is what a Boolean is.
