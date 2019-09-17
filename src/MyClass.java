@@ -38,9 +38,12 @@ here goes...
     System.out.println("You have written: " + input);
 
       System.out.println(" "); //Space for fanciness
-      System.out.println("Different user input with nextLine:");
-      Scanner myVar = new Scanner(System.in);
-      System.out.println(myVar.nextLine());
+      Scanner variable = new Scanner(System.in);
+      String food;
+      System.out.println("What's your favourite food?");
+      food = variable.nextLine();
+      System.out.println("Wow... that sounds... different... but you do you!");
+
       //Read a byte - nextByte()
       //Read a short - nextShort()
       //Read an int - nextInt()
