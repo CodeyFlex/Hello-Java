@@ -22,24 +22,34 @@ here goes...
 
 /** This is my documentation comment, which exists to tell you how good a coder i am, and also click the button to start.*/
 
-// Below is an initial test, removed cause of the later test.
-// String name = "Sebastian"
+      System.out.println("I will now create a personal description with a int, a double, and a char.");
 
-//class MyClass {
-  //public static void main(String[ ] args) {
     String name ="Sebastian";
     int age = 26;
     double score =658.9;
     char group = 'H';
     System.out.println(name + " is " + age + " years old & has score: " + score + " in group " + group );
 
-    //input from the user
-
       System.out.println(" "); //Space for fanciness
+      System.out.println("Input from the user");
     Scanner s = new Scanner(System.in);
     System.out.println("Write your input");
     String input = s.next();
     System.out.println("You have written: " + input);
+
+      System.out.println(" "); //Space for fanciness
+      System.out.println("Different user input with nextLine:");
+      Scanner myVar = new Scanner(System.in);
+      System.out.println(myVar.nextLine());
+      //Read a byte - nextByte()
+      //Read a short - nextShort()
+      //Read an int - nextInt()
+      //Read a long - nextLong()
+      //Read a float - nextFloat()
+      //Read a double - nextDouble()
+      //Read a boolean - nextBoolean()
+      //Read a complete line - nextLine()
+      //Read a word - next()
 
 
 //Boolean online = True
@@ -111,5 +121,14 @@ String w = "World";
       System.out.println(var);
       System.out.println(w);
       System.out.println("and this way i'm displaying a variable, and a string to put together the words: Hello World)");
+
+      System.out.println(" "); //Space for fanciness
+      System.out.println("Now i will create two strings, and put them together: ");
+      String firstName, lastName;
+      firstName = "Codey";
+      lastName = "Flex";
+      System.out.println("My name is " + firstName +" "+lastName);
+
+      //A char is a single letter
     }
   }
