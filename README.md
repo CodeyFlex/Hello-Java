@@ -9,3 +9,20 @@
 ######### Make
 ########## This
 
+I guess we found out...
+
+*Hello in Italics*
+
+**Hello in Bold**
+
+* I enjoy sports:
+  * MMA/Jiu Jitsu
+  * Swimming
+  * Becoming man candy
+  
+* I want to code cause:
+  * I love tech
+  * I wanna make my own game one day
+  * I'm glued to my PC... litteraly, plz send help.
+  
+  
