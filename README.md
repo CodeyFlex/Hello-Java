@@ -28,7 +28,7 @@ I guess we found out...
   
 * I like small happy dogs
 
-<img src="images/Squishy_boye.jpg" width="100" >
+< img src="images/Squishy_boye.jpg" width="100" >
 
 ![Chubsy Doggo](Images/Squishy_boye.jpg?raw=true)
   
