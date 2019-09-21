@@ -27,7 +27,18 @@ I guess we found out...
   * I'm glued to my PC... litteraly, plz send help.
   
 * I like small happy dogs
-  
-![Github-small] (https://github.com/CodeyFlex/Hello-World/blob/master/Squishy%20boye.jpg?raw=true "Title")
-  
-![Corgi Doggo] (xHQ0wyc.jpg?raw=true "Title")
+
+<img src="Images/Squishy_boye.jpg" width="200" >
+
+<img src="Images/xHQ0wyc.jpg" width="200" >
+
+[My Github](https://github.com/CodeyFlex)
+
+As some dude/dudette said:
+
+> Win or learn.
+
+~~Nothing was written here, shush.~~
+
+(╯°□°)╯︵ ┻━┻  | (╯°□°)╯ (╯°□°)╯
+------------- | -------------
