@@ -26,7 +26,8 @@ I guess we found out...
   * I wanna make my own game one day
   * I'm glued to my PC... litteraly, plz send help.
   
-  * I like small happy dogs
+* I like small happy dogs
   
-![Chubsy Doggo] (Squishy Boye.jpg)
+![Chubsy Doggo] (https://github.com/CodeyFlex/Hello-World/blob/master/Squishy%20boye.jpg)
   
+![Corgi Doggo] (https://github.com/CodeyFlex/Hello-World/blob/master/xHQ0wyc.jpg)
