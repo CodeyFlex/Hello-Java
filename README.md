@@ -39,3 +39,6 @@ As some dude/dudette said:
 > Win or learn.
 
 ~~Nothing was written here, shush.~~
+
+(╯°□°)╯︵ ┻━┻  | (╯°□°)╯ (╯°□°)╯
+------------- | -------------
