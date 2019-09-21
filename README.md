@@ -34,6 +34,8 @@ I guess we found out...
 
 [My Github](https://github.com/CodeyFlex)
 
-As some dude said:
+As some dude/dudette said:
 
 > Win or learn.
+
+~~Nothing was written here, shush.~~
