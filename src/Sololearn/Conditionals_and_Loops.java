@@ -1,3 +1,5 @@
+package Sololearn;
+
 import java.util.Scanner;
 
 class Conditionals_and_Loops {
