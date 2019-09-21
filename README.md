@@ -18,6 +18,7 @@ I guess we found out...
 * I enjoy sports:
   * MMA/Jiu Jitsu
   * Swimming
+  * Snowboarding
   * Becoming man candy
   
 * I want to code cause:
@@ -25,4 +26,7 @@ I guess we found out...
   * I wanna make my own game one day
   * I'm glued to my PC... litteraly, plz send help.
   
+  * I like small happy dogs
+  
+![Chubsy Doggo] (/Squishy Boye.jpg)
   
