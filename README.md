@@ -28,6 +28,6 @@ I guess we found out...
   
 * I like small happy dogs
   
-! [Chubsy Doggo] (/https://github.com/CodeyFlex/Hello-World/blob/master/Squishy%20boye.jpg)
+! [Chubsy Doggo] (http://github.com/CodeyFlex/Hello-World/blob/master/Squishy%20boye.jpg)
   
-! [Corgi Doggo] (/https://github.com/CodeyFlex/Hello-World/blob/master/xHQ0wyc.jpg)
+! [Corgi Doggo] (http://github.com/CodeyFlex/Hello-World/blob/master/xHQ0wyc.jpg)
