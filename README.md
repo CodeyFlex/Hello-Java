@@ -28,6 +28,6 @@ I guess we found out...
   
 * I like small happy dogs
 
-<img src="Images/Squishy_boye.jpg" width="100" >
+<img src="Images/Squishy_boye.jpg" width="200" >
 
-<img src="Images/xHQ0wyc.jpg" width="100" >
+<img src="Images/xHQ0wyc.jpg" width="200" >
