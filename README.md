@@ -28,5 +28,5 @@ I guess we found out...
   
   * I like small happy dogs
   
-![Chubsy Doggo] (/Squishy Boye.jpg)
+![Chubsy Doggo] (Squishy Boye.jpg)
   
