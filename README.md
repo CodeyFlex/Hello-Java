@@ -30,6 +30,4 @@ I guess we found out...
 
 <img src="Images/Squishy_boye.jpg" width="100" >
 
-![Chubsy Doggo](Images/Squishy_boye.jpg?raw=true)
-  
-![Corgi Doggo](Images/xHQ0wyc.jpg?raw=true)
+<img src="Images/xHQ0wyc.jpg" width="100" >
