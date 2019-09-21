@@ -32,4 +32,8 @@ I guess we found out...
 
 <img src="Images/xHQ0wyc.jpg" width="200" >
 
-[Github](https://github.com/CodeyFlex)
+[My Github](https://github.com/CodeyFlex)
+
+As some dude said:
+
+> Win or learn.
