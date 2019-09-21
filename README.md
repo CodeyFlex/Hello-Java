@@ -30,4 +30,4 @@ I guess we found out...
   
 ![Chubsy Doggo](Images/SquishyBoye.jpg)
   
-![Corgi Doggo](xHQ0wyc.jpg?raw=true "Title")
+![Corgi Doggo](Images/xHQ0wyc.jpg?raw=true "Title")
