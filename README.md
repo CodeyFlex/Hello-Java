@@ -28,6 +28,6 @@ I guess we found out...
   
 * I like small happy dogs
   
-![Chubsy Doggo](Images/SquishyBoye.jpg)
+![Chubsy Doggo](Images/Squishy_Boye.jpg?raw=true)
   
-![Corgi Doggo](Images/xHQ0wyc.jpg?raw=true "Title")
+![Corgi Doggo](Images/xHQ0wyc.jpg?raw=true)
