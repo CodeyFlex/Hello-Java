@@ -34,6 +34,7 @@ class Conditionals_and_Loops {
 
             System.out.println("Welcome to the Ayaya theater!"); //Greeting
             System.out.println("Would you like to join us for the 72 hour listening session?! :D"); //Question
+            System.out.println("Yes or no?"); //Guidance
 
             String answer = answerScanner.next(); //Waiting for input
             String yes = "Yes";
@@ -48,6 +49,8 @@ class Conditionals_and_Loops {
                 System.out.println("*The theater guards drag you in screaming whilst you slowly approach the beautiful Ayaya sounds*");
             }else{
                 System.out.println("Huh?");
+
+                
             }
         }
     }
