@@ -49,9 +49,33 @@ class Conditionals_and_Loops {
                 System.out.println("*The theater guards drag you in screaming whilst you slowly approach the beautiful Ayaya sounds*");
             }else{
                 System.out.println("Huh?");
+//An if statement can contain as many else if statements as you want.
 
-                
-            }
+
+                 }
+            {
+            //Lets use a logical operator to combine multiple conditions:
+            System.out.println(" "); //Space for fanciness
+            System.out.println("Welcome to the millionaire's club!"); //Greeting
+            System.out.println("Are you over the legal age of 18, and also a millionaire?!"); //Question
+
+            int age,money;
+
+            System.out.println(" "); //Space for fanciness
+            System.out.println("Type in current legal age:"); //Greeting
+            Scanner ageScan = new Scanner(System.in);
+            age = ageScan.nextInt();
+
+            System.out.println(" "); //Space for fanciness
+            System.out.println("Type in current level of wealth:"); //Greeting
+            Scanner moneyScanner = new Scanner(System.in);
+            money = moneyScanner.nextInt();
+
+            if(age>18 && money>1000000)
+                {
+                System.out.println("Welcome");
+                }
+              }
         }
     }
 }
