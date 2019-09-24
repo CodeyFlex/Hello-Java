@@ -73,8 +73,25 @@ class Conditionals_and_Loops {
 
             if(age>18 && money>1000000)
                 {
-                System.out.println("Welcome");
+                System.out.println("Welcome to the millionaire's club!");
+                }else{
+                System.out.println("Get out!");
                 }
+
+            //Lets work with the OR operator:
+            System.out.println(" "); //Space for fanciness
+            System.out.println("Can i see some ID for this liquor purchase?"); //Greeting
+
+                int age2 = 16;
+                int money2 = 700;
+
+                System.out.println(" "); //Space for fanciness
+                System.out.println("*You hand over 200 dollars extra to the shop owner*"); //Ye lil sneak
+
+                if (age > 18 || money > 500) {
+                    System.out.println(" "); //Space for fanciness
+                    System.out.println("Looks good to me sir, here's your liquor!");
+                   }
               }
         }
     }
