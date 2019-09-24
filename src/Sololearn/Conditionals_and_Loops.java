@@ -48,7 +48,7 @@ class Conditionals_and_Loops {
                 System.out.println("No...? oh right, it's opposite day! totally forgot, enjoy your evening! :D");
                 System.out.println("*The theater guards drag you in screaming whilst you slowly approach the beautiful Ayaya sounds*");
             }else{
-                System.out.println("Huh?");
+                System.out.println("Huh?"); //Unexpected answer
 //An if statement can contain as many else if statements as you want.
 
 
@@ -73,9 +73,9 @@ class Conditionals_and_Loops {
 
             if(age>18 && money>1000000)
                 {
-                System.out.println("Welcome to the millionaire's club!");
+                System.out.println("Welcome to the millionaire's club!"); //Acceptance
                 }else{
-                System.out.println("Get out!");
+                System.out.println("Get out!"); //Rejection
                 }
 
             //Lets work with the OR operator:
@@ -88,9 +88,12 @@ class Conditionals_and_Loops {
                 System.out.println(" "); //Space for fanciness
                 System.out.println("*You hand over 200 dollars extra to the shop owner*"); //Ye lil sneak
 
-                if (age > 18 || money > 500) {
+                if (age > 18 || money > 500) { //the || is the OR operator
                     System.out.println(" "); //Space for fanciness
-                    System.out.println("Looks good to me sir, here's your liquor!");
+                    System.out.println("Looks good to me sir, here's your liquor!"); //Wutang - C.R.E.A.M.
+
+                    //Lets work with the switch Statement:
+                    
                    }
               }
         }
