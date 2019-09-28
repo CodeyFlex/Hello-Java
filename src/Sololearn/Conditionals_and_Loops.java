@@ -96,13 +96,13 @@ class Conditionals_and_Loops {
                     int path = 2;
 
                     System.out.println(" "); //Space for fanciness
-                    System.out.println("Choose your path: ");
+                    System.out.println("Choose your path: "); //Choose int value for case choice
                     System.out.println(" "); //Space for fanciness
                     System.out.println("1: The Wolf Pit");
                     System.out.println("2: The Lion Pit");
                     System.out.println("3: The Ice Cream Pit");
                     System.out.println(" "); //Space for fanciness
-                    System.out.println("Type a number between: 1-3");
+                    System.out.println("Type a number between: 1-3"); //Waiting for input
 
 
                     Scanner pathScanner = new Scanner(System.in);
@@ -118,12 +118,31 @@ class Conditionals_and_Loops {
                         case 3:
                             System.out.println("You're dead, but also really cold.");
                             break;
-                        default:
+                        default: // If none of my cases are selected, this case will be run instead.
                             System.out.println("That wasn't very 1-3 of you...");
-                        }
+                                }
+                            //Let's do a loop
 
+                            int loopExample = 2;
+
+                            System.out.println(" "); //Space for fanciness
+                            System.out.println("Saw: Let's play a game");//Hint of trick
+                            System.out.println("Type a number higher than 3: ");//Task
+
+                            Scanner loopScanner = new Scanner(System.in);
+                            loopExample = loopScanner.nextInt();
+
+                            while(loopExample > 3) {
+                                System.out.println("Again");//Do what you're told Sisyfos
+                                if (loopExample > 3)
+                                    loopExample = loopScanner.nextInt();
+                                loopExample--; }
+                                {
+                            if (loopExample < 2)
+                                    System.out.println("You did the thing you rebel.");
+                                }
+                            }
+                        }
                    }
               }
         }
-    }
-}
