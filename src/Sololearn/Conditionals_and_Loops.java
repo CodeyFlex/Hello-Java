@@ -93,36 +93,30 @@ class Conditionals_and_Loops {
                     System.out.println("Looks good to me sir, here's your liquor!"); //Wutang - C.R.E.A.M.
 
                     //Lets work with the switch Statement:
-                    int day = 2;
+                    int path = 2;
 
                     System.out.println(" "); //Space for fanciness
-                    System.out.println("What day is it today?");
-                    System.out.println("Type a day with a number: 1-7, 1 being monday, 2 being tuesday...");
+                    System.out.println("Choose your path: ");
+                    System.out.println(" "); //Space for fanciness
+                    System.out.println("The Wolf Pit");
+                    System.out.println("The Lion Pit");
+                    System.out.println("The Ice Cream Pit");
+                    System.out.println(" "); //Space for fanciness
+                    System.out.println("Type a number between: 1-3");
 
-                    Scanner dayScanner = new Scanner(System.in);
-                    day = dayScanner.nextInt();
 
-                    switch(day) {
+                    Scanner pathScanner = new Scanner(System.in);
+                    path = pathScanner.nextInt();
+
+                    switch(path) {
                         case 1:
-                            System.out.println("Monday"); // Outputs "Monday"
+                            System.out.println("The wolves have adopted you, and you're now a wolf puppy."); //Result of typing the number: 1, changing the int named "path" to 1.
                             break;
                         case 2:
-                            System.out.println("Tuesday"); // Outputs "Tuesday"
+                            System.out.println("You're dead... not sure what you expected...");
                             break;
                         case 3:
-                            System.out.println("Wednesday"); // Outputs "Wednesday"
-                            break;
-                        case 4:
-                            System.out.println("Thursday"); // Outputs "Thursday"
-                            break;
-                        case 5:
-                            System.out.println("Friday"); // Outputs "Friday"
-                            break;
-                        case 6:
-                            System.out.println("Saturday");// Outputs "Saturday"
-                            break;
-                        case 7:
-                            System.out.println("Sunday");// Outputs "Sunday"
+                            System.out.println("You're dead, but also really cold.");
                             break;
                         }
 
