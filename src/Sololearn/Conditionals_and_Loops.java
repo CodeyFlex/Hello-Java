@@ -93,7 +93,39 @@ class Conditionals_and_Loops {
                     System.out.println("Looks good to me sir, here's your liquor!"); //Wutang - C.R.E.A.M.
 
                     //Lets work with the switch Statement:
-                    
+                    int day = 2;
+
+                    System.out.println(" "); //Space for fanciness
+                    System.out.println("What day is it today?");
+                    System.out.println("Type a day with a number: 1-7, 1 being monday, 2 being tuesday...");
+
+                    Scanner dayScanner = new Scanner(System.in);
+                    day = dayScanner.nextInt();
+
+                    switch(day) {
+                        case 1:
+                            System.out.println("Monday"); // Outputs "Monday"
+                            break;
+                        case 2:
+                            System.out.println("Tuesday"); // Outputs "Tuesday"
+                            break;
+                        case 3:
+                            System.out.println("Wednesday"); // Outputs "Wednesday"
+                            break;
+                        case 4:
+                            System.out.println("Thursday"); // Outputs "Thursday"
+                            break;
+                        case 5:
+                            System.out.println("Friday"); // Outputs "Friday"
+                            break;
+                        case 6:
+                            System.out.println("Saturday");// Outputs "Saturday"
+                            break;
+                        case 7:
+                            System.out.println("Sunday");// Outputs "Sunday"
+                            break;
+                        }
+
                    }
               }
         }
