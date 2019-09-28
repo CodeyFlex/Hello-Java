@@ -121,7 +121,7 @@ class Conditionals_and_Loops {
                         default: // If none of my cases are selected, this case will be run instead.
                             System.out.println("That wasn't very 1-3 of you...");
                                 }
-                            //Let's do a loop
+                            //Let's do a While loop
 
                             int loopExample = 2;
 
@@ -132,14 +132,15 @@ class Conditionals_and_Loops {
                             Scanner loopScanner = new Scanner(System.in);
                             loopExample = loopScanner.nextInt();
 
-                            while(loopExample > 3) {
-                                System.out.println("Again");//Do what you're told Sisyfos
+                            while(loopExample > 3) { //Aslong as the int loopExample is higher than 3, it will loop.
+                                System.out.println("Again"); //Do what you're told Sisyfos
                                 if (loopExample > 3)
-                                    loopExample = loopScanner.nextInt();
-                                loopExample--; }
+                                    loopExample = loopScanner.nextInt(); //looping: Waiting for input
+                                //adding loopExample--; will make the number lower each loop, and loopExample++; will make the number higher each loop.
+                                                    }
                                 {
-                            if (loopExample < 2)
-                                    System.out.println("You did the thing you rebel.");
+                            if (loopExample < 3) //Int needed to end the loop
+                                    System.out.println("You did the thing you rebel."); //User figured out the trick
                                 }
                             }
                         }
