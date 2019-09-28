@@ -71,7 +71,7 @@ class Conditionals_and_Loops {
             Scanner moneyScanner = new Scanner(System.in);
             money = moneyScanner.nextInt();
 
-            if(age>18 && money>1000000)
+            if(age>18 && money>999999)
                 {
                 System.out.println("Welcome to the millionaire's club!"); //Acceptance
                 }else{
@@ -98,9 +98,9 @@ class Conditionals_and_Loops {
                     System.out.println(" "); //Space for fanciness
                     System.out.println("Choose your path: ");
                     System.out.println(" "); //Space for fanciness
-                    System.out.println("The Wolf Pit");
-                    System.out.println("The Lion Pit");
-                    System.out.println("The Ice Cream Pit");
+                    System.out.println("1: The Wolf Pit");
+                    System.out.println("2: The Lion Pit");
+                    System.out.println("3: The Ice Cream Pit");
                     System.out.println(" "); //Space for fanciness
                     System.out.println("Type a number between: 1-3");
 
@@ -118,6 +118,8 @@ class Conditionals_and_Loops {
                         case 3:
                             System.out.println("You're dead, but also really cold.");
                             break;
+                        default:
+                            System.out.println("That wasn't very 1-3 of you...");
                         }
 
                    }
