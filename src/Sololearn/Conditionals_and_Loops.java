@@ -132,9 +132,9 @@ class Conditionals_and_Loops {
                             Scanner loopScanner = new Scanner(System.in);
                             loopExample = loopScanner.nextInt();
 
-                            while(loopExample > 3) { //Aslong as the int loopExample is higher than 3, it will loop.
+                            while(loopExample >= 3) { //Aslong as the int loopExample is higher than 3, it will loop.
                                 System.out.println("Again"); //Do what you're told Sisyfos
-                                if (loopExample > 3)
+                                if (loopExample >= 3)
                                     loopExample = loopScanner.nextInt(); //looping: Waiting for input
                                 //adding loopExample--; will make the number lower each loop, and loopExample++; will make the number higher each loop.
                                                     }
