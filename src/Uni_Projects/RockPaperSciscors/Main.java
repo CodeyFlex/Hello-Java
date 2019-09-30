@@ -12,12 +12,13 @@ public class Main {
 
         // Game starts here
         RockPaperSciscors round1 = new RockPaperSciscors();
-        System.out.println(round1.thhrow(A, B));
 
         // Player picks a play
+        System.out.println("Type in your choice of weapon: "); //Asking for input
+        System.out.println("Rock, Paper or Scissor?"); //Delivering hints for choices
         Scanner rpsScanner = new Scanner(System.in);
-        Hand playersHand = null;
-        String playersString = rpsScanner.next();
+        Hand playersHand = null; //Null temporarily for game start
+        String playersString = rpsScanner.next(); //Waiting for input (select hand)
         if (playersString.equalsIgnoreCase("Rock")) { playersHand = Hand.ROCK; }
         if (playersString.equalsIgnoreCase("Paper")) { playersHand = Hand.PAPER; }
         if (playersString.equalsIgnoreCase("Scissor")) { playersHand = Hand.SCISSOR; }
@@ -25,7 +26,7 @@ public class Main {
 
         // Computer generates a play
         Hand computersHand = null;
-        int handComputer =(int) (Math.random()*3);
+        int handComputer =(int) (Math.random()*3); //Computer random hand by picking random integer 1-3
 
         if (handComputer ==0) {computersHand = Hand.ROCK; }
         if (handComputer ==1) {computersHand = Hand.PAPER; }
