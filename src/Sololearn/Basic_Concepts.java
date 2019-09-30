@@ -7,7 +7,7 @@ import java.util.Scanner;
 //Java Util Scanner is necessary for the user input function to work.
 
 class Basic_Concepts {
-  public static void main(String[ ] args) {
+  public static void main(String[ ] args) { //write this fast with psvm
 
     System.out.println("Hey world, i like swimming.");
       System.out.println(" "); //Space for fanciness
