@@ -80,6 +80,8 @@ class Conditionals_and_Loops {
 
             //Lets work with the OR operator:
             System.out.println(" "); //Space for fanciness
+            System.out.println("Let's use an OR operator, to buy stuff we shouldn't");
+            System.out.println(" "); //Space for fanciness
             System.out.println("Can i see some ID for this liquor purchase?"); //Greeting
 
                 int age2 = 16;
@@ -91,7 +93,7 @@ class Conditionals_and_Loops {
                 if (age > 18 || money > 500) { //the || is the OR operator
                     System.out.println(" "); //Space for fanciness
                     System.out.println("Looks good to me sir, here's your liquor!"); //Wutang - C.R.E.A.M.
-
+                }
                     //Lets work with the switch Statement:
                     int path = 2;
 
@@ -141,9 +143,29 @@ class Conditionals_and_Loops {
                                 {
                             if (loopExample < 3) //Int needed to end the loop
                                     System.out.println("You did the thing you rebel."); //User figured out the trick
+                                    System.out.println(" "); //Space for fanciness
                                 }
+                            //Lets do a for loop
+                System.out.println("Lets use a for loop to count from 3 to 8");
+                System.out.println(" "); //Space for fanciness
+                    for(int f = 3;f <=8;f++) { //For is basically a more compact way of writing while, hence the similarities to my earlier code.
+                        System.out.println(f); //f++ makes the loop add 1 to the value of f over and over
+                                              }
+                    //We can also just print all the even values from 30 to 42
+                System.out.println(" "); //Space for fanciness
+                System.out.println("How about all the even values from 30 to 42?");
+                for(int g = 30; g<=42; g=g+2) {
+                    System.out.println(g);
+                }
+                //Lets do a "Do While" loop, these loops are guaranteed to run at least one time cause of "do" in contrast to a while loop.
+                System.out.println(" ");
+                System.out.println("Let's do a Do While loop to count from 4 to 8");
+                int t = 4;
+                do {
+                    System.out.println(t);
+                    t++;
+                } while(t < 9);//The loop ends when it reaches this value
                             }
                         }
                    }
               }
-        }
