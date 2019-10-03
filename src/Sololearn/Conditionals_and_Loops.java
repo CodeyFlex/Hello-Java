@@ -79,7 +79,7 @@ class Conditionals_and_Loops {
 
                 //Lets work with the OR operator:
                 System.out.println(" "); //Space for fanciness
-                System.out.println("Let's use an OR operator, to buy stuff we shouldn't");
+                System.out.println("Let's use an OR operator, to buy stuff we shouldn't since we're 16, but have 700 dollars.");
                 System.out.println(" "); //Space for fanciness
                 System.out.println("Can i see some ID for this liquor purchase?"); //Greeting
 
