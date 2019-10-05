@@ -24,6 +24,10 @@ public class Arrays {
             System.out.println("Let's print the array with a loop instead");
             for (int sL=0; sL<=3; sL++){
                     System.out.println(shopList[sL]);
-            }
+            } //We close the loop with this, otherwise it would loop the following as well: (i could probably also write break)
+                System.out.println(" "); //Space for fanciness
+                System.out.println("Now let's use length to figure out the length of our array:");
+                System.out.println(shopList.length);
+
     }
 }
