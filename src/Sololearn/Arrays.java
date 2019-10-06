@@ -12,7 +12,7 @@ public class Arrays {
                     shopList[0] = "Salad"; //Index 0
                     shopList[1] = "Milkshake"; //Index 1
                     shopList[2] = "Milk"; //Index 2
-                    shopList[3] = "cat"; //Index 3
+                    shopList[3] = "Cat"; //Index 3
 
                     System.out.println("Let's print out a shopping list using 4 indexes in an array:");
                     System.out.println(shopList[0]); //Printing Index 0

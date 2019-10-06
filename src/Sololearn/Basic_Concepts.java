@@ -3,8 +3,7 @@ package Sololearn;
 import org.w3c.dom.ls.LSOutput;
 
 import java.sql.SQLOutput;
-import java.util.Scanner;
-//Java Util Scanner is necessary for the user input function to work.
+import java.util.Scanner; //Java Util Scanner is necessary for the user input function to work.
 
 class Basic_Concepts {
   public static void main(String[ ] args) { //write this fast with psvm
@@ -24,7 +23,7 @@ here goes...
 
 /** This is my documentation comment, which exists to tell you how good a coder i am, and also click the button to start.*/
 
-      System.out.println("I will now create a personal description with a int, a double, and a char.");
+      System.out.println("I will now create a personal description with a string, int, a double, and a char.");
 
     String name ="Sebastian";
     int age = 26;
@@ -82,7 +81,7 @@ int y = 5;
 
       System.out.println(" "); //Space for fanciness
       int value = 23;
-    int res = value % 6;
+    int res = value % 6; //Modulo returns the remainder of that division
     System.out.println("Value % 6 = ");
     System.out.println(res);
 
@@ -116,16 +115,16 @@ int y = 5;
       //x/=y means x=x/y
       //x%=y means x=x%y
 
-//Strings: Represents a sequence of characters
+      //Strings: Represents a sequence of characters
       System.out.println(" "); //Space for fanciness
       System.out.println("To display a string i will write: ");
-String w = "World";
+      String w = "World";
 
       String var;
       var = "Hello ";
       System.out.println(var);
       System.out.println(w);
-      System.out.println("and this way i'm displaying a variable, and a string to put together the words: Hello World)");
+      System.out.println("and this way i'm displaying a variable, and a string to print the words: Hello, & World)");
 
       System.out.println(" "); //Space for fanciness
       System.out.println("Now i will create two strings, and put them together: ");

@@ -26,6 +26,7 @@ class Conditionals_and_Loops {
         int x = 12;
         if (x < 53) {
             System.out.println("Hi");
+            System.out.println(" "); //Space for fanciness
 
 
             Scanner answerScanner = new Scanner(System.in); //Creates a new scanner
@@ -49,7 +50,7 @@ class Conditionals_and_Loops {
                 System.out.println("*The theater guards drag you in screaming whilst you slowly approach the beautiful Ayaya sounds*");
             } else {
                 System.out.println("Huh?"); //Unexpected answer
-//An if statement can contain as many else if statements as you want.
+            //An if statement can contain as many else if statements as you want.
 
 
             }
@@ -86,15 +87,14 @@ class Conditionals_and_Loops {
                 int age2 = 16;
                 int money2 = 700;
 
-                System.out.println(" "); //Space for fanciness
-                System.out.println("*You hand over 200 dollars extra to the shop owner*"); //Ye lil sneak
-
-                if (age > 18 || money > 500) { //the || is the OR operator
+                if (age > 18 || money > 200) { //the || is the OR operator
+                    System.out.println(" "); //Space for fanciness
+                    System.out.println("*You hand over 200 dollars extra to the shop owner*"); //Ye lil sneak
                     System.out.println(" "); //Space for fanciness
                     System.out.println("Looks good to me sir, here's your liquor!"); //Wutang - C.R.E.A.M.
                 }
                 //Lets work with the switch Statement:
-                int path = 2;
+                int path;
 
                 System.out.println(" "); //Space for fanciness
                 System.out.println("Choose your path: "); //Choose int value for case choice
@@ -174,8 +174,8 @@ class Conditionals_and_Loops {
                 continue;//This continue statement will skip the value 60, and only output 20, 40 & 80
             }
             System.out.println(c);
-            System.out.println("Success!");
         }
+        System.out.println("Success!");
     }
 }
 
