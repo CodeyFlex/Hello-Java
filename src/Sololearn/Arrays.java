@@ -28,18 +28,25 @@ public class Arrays {
         System.out.println(" "); //Space for fanciness
 
         System.out.println("Now let's use length to figure out the length of our array:");
-        System.out.println(shopList.length);
+        System.out.println(shopList.length); //Self explanatory
 
         System.out.println(" "); //Space for fanciness
         System.out.println("Now let's calculate the sum of all the wares in our shopping list within my array by using a for loop");
         int[] shopListPrices = {6, 10, 2, 500};
         System.out.println("The Salad is " + shopListPrices[0] + "$, Milkshake is " + shopListPrices[1] + "$, Milk is " + shopListPrices[2] + "$, and the cat is " + shopListPrices[3] + "$, which all equals to: ");
         int sum = 0;
-        for (int x = 0; x < shopListPrices.length; x++) {
+        for (int x = 0; x < shopListPrices.length; x++) { //Here we find the value that will tell us how many times to loop the println
             sum += shopListPrices[x];
         }
         System.out.println(sum + "$");
 
         System.out.println(" "); //Space for fanciness
+        System.out.println("Let's try using an enhanced for loop to print out 5 integers: ");
+        int[] primes = {4, 2, 81, 3, 22};
+
+        for (int t : primes) { //The : , shall be read as "in" = "int" in "array" (in this case) so in this case t holds the values of the array
+            System.out.println(t);
+        }
+
     }
 }

@@ -38,7 +38,4 @@ public class RockPaperSciscors {
 
         return result;
     }
-
-    //TODO moreThrows() {}
-
 }

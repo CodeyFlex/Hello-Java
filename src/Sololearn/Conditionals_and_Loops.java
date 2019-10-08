@@ -50,7 +50,7 @@ class Conditionals_and_Loops {
                 System.out.println("*The theater guards drag you in screaming whilst you slowly approach the beautiful Ayaya sounds*");
             } else {
                 System.out.println("Huh?"); //Unexpected answer
-            //An if statement can contain as many else if statements as you want.
+                //An if statement can contain as many else if statements as you want.
 
 
             }
@@ -169,8 +169,8 @@ class Conditionals_and_Loops {
         //Let's work with the continue statement
         System.out.println(" ");
         System.out.println("Now let's use the continue function to print out 20, 40 & 80, but not 60:");
-        for(int c=20; c<=80; c=c+20) {
-            if(c == 60) { //This is the value we will skip
+        for (int c = 20; c <= 80; c = c + 20) {
+            if (c == 60) { //This is the value we will skip
                 continue;//This continue statement will skip the value 60, and only output 20, 40 & 80
             }
             System.out.println(c);
