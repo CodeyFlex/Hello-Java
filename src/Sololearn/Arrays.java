@@ -47,10 +47,15 @@ public class Arrays {
         for (int t : primes) { //The : , shall be read as "in" = "int" in "array" (in this case) so in this case t holds the values of the array
             System.out.println(t);
         }
+        System.out.println(" "); //Space for fanciness
         System.out.println("Now let's try making a multidimensional array: ");
         int[ ][ ] multiD = { {41, 33, 72}, {24, 91, 43} }; //Two [ ] and two { } to indicate multidimensional arrays, this way we declare an array with two arrays as it's elements.
         int m = multiD[1][2]; //First box for the array, second box for the element.
         System.out.println("With this multidimensional array we will grab the 3rd element out of the second array which is 43");
         System.out.println(m); //print out the int with the multidimensional array within it
+        System.out.println(" "); //Space for fanciness
+        System.out.println("Now let's change this value to 59");
+        multiD[1][2] = 59;
+        System.out.println(multiD[1][2]);
     }
 }
