@@ -13,7 +13,7 @@ public class Classes_and_Objects {
     static int sum(int value1, int value2) { //Naming my method and adding two integers inside it
         return value1 + value2; //Giving my method it's return function
     }
-
+        //Whenever i don't need to return a value from my method, use the keyword void.
     public static void main(String[] args) {
 
         //in object oriented programming, each object has three dimensions: identity, attributes, and behavior.
@@ -42,5 +42,23 @@ public class Classes_and_Objects {
         //Method written above psvm
         int r = sum(2, 5); //Similar to the calculator, i get the sum of the two values inside the box
         System.out.println(r); //Print sum of r
+
+        System.out.println(" "); //Space for fanciness
+        System.out.println("Now let's take two parameters of type int, and return the greater one of 17 & 79: ");
+        int great = greatest(17, 79); //add two values that compete to be highest
+        System.out.println(great); //print out highest int
+    }
+
+    static int greatest(int a, int b) {
+        if(a > b) {
+            return a;
+        }
+        else {
+            return b;
+        }
+        //or the shorter version:
+        //static int max (int a,int b){
+        //    return (a>b)?a:b;
+        //}
     }
 }
