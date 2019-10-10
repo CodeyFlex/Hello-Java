@@ -1,9 +1,14 @@
 package Sololearn;
 
+import java.sql.SQLOutput;
+
 public class Classes_and_Objects {
 
-    static void sayCheese() {
-        System.out.println("Cheese!");
+    static void sayCheese() { //Naming my method. Adding (String food) to expand the sout with a chosen string.
+        System.out.println("Cheese!"); //Giving my method it's function
+    }
+    static void sayCheesePlus(String food) { //Adding a String called "food" to the method
+        System.out.println("Cheese" + food); //Giving my method it's function along with a named String
     }
 
     public static void main(String[] args) {
@@ -23,6 +28,10 @@ public class Classes_and_Objects {
         //System.out.println("Cheese!");
         //}
         System.out.println("And have it say Cheese!");
-        sayCheese();
+        sayCheese(); //Call the Method (i can do this as many times as i want.)
+        
+        System.out.println(" "); //Space for fanciness
+        System.out.println("I can also expand on my method with a string that says PARTY!");
+        sayCheesePlus(" PARTY!"); //Adding string to the call
     }
 }
