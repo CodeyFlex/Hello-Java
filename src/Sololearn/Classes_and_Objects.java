@@ -10,6 +10,9 @@ public class Classes_and_Objects {
     static void sayCheesePlus(String food) { //Adding a String called "food" to the method
         System.out.println("Cheese" + food); //Giving my method it's function along with a named String
     }
+    static int sum(int value1, int value2) { //Naming my method and adding two integers inside it
+        return value1 + value2; //Giving my method it's return function
+    }
 
     public static void main(String[] args) {
 
@@ -29,9 +32,15 @@ public class Classes_and_Objects {
         //}
         System.out.println("And have it say Cheese!");
         sayCheese(); //Call the Method (i can do this as many times as i want.)
-        
+
         System.out.println(" "); //Space for fanciness
         System.out.println("I can also expand on my method with a string that says PARTY!");
         sayCheesePlus(" PARTY!"); //Adding string to the call
+
+        System.out.println(" "); //Space for fanciness
+        System.out.println("Let's use a return with a method to return a sum value of 2 + 5: ");
+        //Method written above psvm
+        int r = sum(2, 5); //Similar to the calculator, i get the sum of the two values inside the box
+        System.out.println(r); //Print sum of r
     }
 }
