@@ -57,8 +57,10 @@ public class Classes_and_Objects {
             return b;
         }
         //or the shorter version:
-        //static int max (int a,int b){
+        //static int greatest (int a,int b){
         //    return (a>b)?a:b;
         //}
+
+        //Now i'm gonna create a car class, and make it honk. (can be found in the vehicle folder)
     }
 }
