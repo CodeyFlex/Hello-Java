@@ -63,6 +63,10 @@ public class Classes_and_Objects {
 
         //Now i'm gonna create a car class, and make it honk & brake. (can be found in the vehicle folder)
 
-
+        //Access modifiers:
+        //default: A variable or method declared with no access control modifier is available to any other class in the same package.
+        //public: Accessible from any other class.
+        //protected: Provides the same access as the default access modifier, with the addition that subclasses can access protected methods and variables of the superclass).
+        //private: Accessible only within the declared class itself.
     }
 }

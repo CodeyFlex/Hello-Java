@@ -1,16 +1,56 @@
 package Sololearn.Vehicle;
 
 public class Vehicle {
-    void Honk() { //Naming method
+    public void Honk() { //Naming method
         System.out.println("Honk-Hoonk!"); //Declaring the methods function
     }
 
-    void Brake() {
+    public void Brake() {
         System.out.println("Screeech!");
     }
-    int maxSpeed;
-    int wheels;
-    int vehicleHealth;
-    String color;
-    double fuelCapacity;
+    private int maxSpeed; //Private so it only goes under my vehicle class
+    private int wheels;
+    private int vehicleHealth;
+    private String color;
+    private double fuelCapacity;
+
+    //Getters and Setters are used to effectively protect your data, particularly when creating classes. For each variable, the get method returns its value, while the set method sets the value.
+    //Getters start with get, followed by the variable name, with the first letter of the variable name capitalized.
+    //Setters start with set, followed by the variable name, with the first letter of the variable name capitalized.
+
+
+    //My getters
+    public int getmaxSpeed(){
+        return maxSpeed;
+    }
+    public int getwheels(){
+        return wheels;
+    }
+    public int getVehicleHealth(){
+        return vehicleHealth;
+    }
+    public String getcolor(){
+        return color;
+    }
+    public double getFuelCapacity(){
+        return fuelCapacity;
+    }
+
+    //My setters
+
+    public void setMaxSpeed(int s) {
+        this.maxSpeed = s;
+    }
+    public void setwheels(int w) {
+        this.wheels = w;
+    }
+    public void setVehicleHealth(int h) {
+        this.vehicleHealth = h;
+    }
+    public void setcolor(String c) {
+        this.color = c;
+    }
+    public void setFuelCapacity(int f) {
+        this.fuelCapacity = f;
+    }
 }
