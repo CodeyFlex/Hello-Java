@@ -6,6 +6,11 @@ public class Vehicle {
     }
 
     void Brake() {
-        System.out.println("Screeech");
+        System.out.println("Screeech!");
     }
+    int maxSpeed;
+    int wheels;
+    int vehicleHealth;
+    String color;
+    double fuelCapacity;
 }

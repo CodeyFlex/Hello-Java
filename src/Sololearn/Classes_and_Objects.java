@@ -61,6 +61,8 @@ public class Classes_and_Objects {
         //    return (a>b)?a:b;
         //}
 
-        //Now i'm gonna create a car class, and make it honk. (can be found in the vehicle folder)
+        //Now i'm gonna create a car class, and make it honk & brake. (can be found in the vehicle folder)
+
+
     }
 }
