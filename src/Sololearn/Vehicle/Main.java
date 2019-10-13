@@ -3,6 +3,8 @@ package Sololearn.Vehicle;
 public class Main {
     public static void main(String[] args) {
         Vehicle truck = new Vehicle(); //Truck is now an object of type vehicle
+        //Alternatively i can use the constructor to make the car blue:
+        //Vehicle truck = new Vehicle("blue");
         truck.setcolor("blue");
         truck.setFuelCapacity(100);
         truck.setVehicleHealth(300);

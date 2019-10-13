@@ -12,7 +12,14 @@ public class Vehicle {
     private int wheels;
     private int vehicleHealth;
     private String color;
+        Vehicle() { //This is a constructor, a constructor sets the default attribute, in this case the color of my vehicles
+            color = "Blue"; //The default here is Blue
+    }
     private double fuelCapacity;
+
+    //A constructor can be used to provide initial values for object attributes.
+    //- A constructor name must be same as its class name.
+    //- A constructor must have no explicit return type.
 
     //Getters and Setters are used to effectively protect your data, particularly when creating classes. For each variable, the get method returns its value, while the set method sets the value.
     //Getters start with get, followed by the variable name, with the first letter of the variable name capitalized.
