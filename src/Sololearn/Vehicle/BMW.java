@@ -6,7 +6,7 @@ class BMW extends Vehicle { //Inherit from the Vehicle class with extends
         System.out.println("I'm a BMW, honk!"); //Declaring the methods function
     }
 
-    BMW() {
+    BMW() { //My subclass
         setcolor("Black");
         setFuelCapacity(145);
         setVehicleHealth(205);

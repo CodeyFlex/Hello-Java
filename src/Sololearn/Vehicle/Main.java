@@ -26,15 +26,15 @@ public class Main {
         System.out.println("and also brake:");
         truck.Brake(); //Call method brake
 
-        Vehicle m = new Mercedes();
+        Vehicle m = new Mercedes(); //Adding my new subclass to the main
         Vehicle b = new BMW();
 
         System.out.println(" ");
         System.out.println("My Mercedes also honks: ");
         System.out.println(" ");
-        m.Honk();
+        m.Honk(); //Using subclass honk
 
-        System.out.println("My color is: " + m.getcolor());
+        System.out.println("My color is: " + m.getcolor()); //Getting subclass value
         System.out.println("My fuel Capacity is: " + m.getFuelCapacity());
         System.out.println("My health is: " + m.getVehicleHealth());
         System.out.println("I have " + m.getwheels() + " Wheels");
@@ -43,9 +43,9 @@ public class Main {
         System.out.println(" ");
         System.out.println("And so does my BMW: ");
         System.out.println(" ");
-        b.Honk();
+        b.Honk(); //Using second subclass honk
 
-        System.out.println("My color is: " + b.getcolor());
+        System.out.println("My color is: " + b.getcolor()); //Getting second subclass value
         System.out.println("My fuel Capacity is: " + b.getFuelCapacity());
         System.out.println("My health is: " + b.getVehicleHealth());
         System.out.println("I have " + b.getwheels() + " Wheels");

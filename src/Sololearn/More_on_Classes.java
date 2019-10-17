@@ -20,7 +20,6 @@ public class More_on_Classes {
 
         //3. Polymorphism refers to the idea of "having many forms", it occurs when there is a hierarchy of classes related to each other through inheritance.
         //A call to a member method will cause a different implementation to be executed, depending on the type of the object invoking the method.
-        //
 
         //4. Abstraction
 

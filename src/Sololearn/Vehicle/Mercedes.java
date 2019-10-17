@@ -6,7 +6,7 @@ class Mercedes extends Vehicle { //Inherit from the Vehicle class with extends
         System.out.println("I'm a Mercedes, honk!"); //Declaring the methods function
     }
 
-    Mercedes() {
+    Mercedes() { //My subclass
         setcolor("Red");
         setFuelCapacity(150);
         setVehicleHealth(200);
