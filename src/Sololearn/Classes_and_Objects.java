@@ -30,6 +30,8 @@ public class Classes_and_Objects {
     //    return (a>b)?a:b;
     //}
 
+    public static final double PI = 3.14; //Declaring variable constant with the 'final' keyword.
+
     public static void main(String[] args) {
 
         //in object oriented programming, each object has three dimensions: identity, attributes, and behavior.
@@ -141,7 +143,15 @@ public class Classes_and_Objects {
         System.out.println(" ");
         System.out.println("So the cos of 60 is: ");
         double radian = 60;
-        double mathCos = Math.cos(radian); //This could also just be a direct number value instead of an integer
+        double mathCos = Math.cos(radian); //This could also just be a direct number value instead of a double
         System.out.println(mathCos);
+
+        //Declaring a variable/Method as a static, will make it belong to the class it's written within, rather than a specific instance.
+        //This means that only one instance of a static member exists, even if you create multiple objects of the class, or if you don't create any. It will be shared by all objects.
+
+        System.out.println(" ");
+        System.out.println("Let's use the 'final' keyword to mark a variable constant: ");
+        System.out.println("In this case we will declare PI to be 3.14: ");
+        System.out.println(PI); //Declared up top
     }
 }
