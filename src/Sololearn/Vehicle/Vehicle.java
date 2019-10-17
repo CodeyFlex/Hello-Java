@@ -27,37 +27,37 @@ public class Vehicle {
 
 
     //My getters
-    public int getmaxSpeed(){
-        return maxSpeed;
-    }
-    public int getwheels(){
-        return wheels;
-    }
-    public int getVehicleHealth(){
-        return vehicleHealth;
-    }
     public String getcolor(){
         return color;
     }
     public double getFuelCapacity(){
         return fuelCapacity;
     }
+    public int getVehicleHealth(){
+        return vehicleHealth;
+    }
+    public int getwheels(){
+        return wheels;
+    }
+    public int getmaxSpeed(){
+        return maxSpeed;
+    }
 
     //My setters
 
-    public void setMaxSpeed(int s) {
-        this.maxSpeed = s;
-    }
-    public void setwheels(int w) {
-        this.wheels = w;
-    }
-    public void setVehicleHealth(int h) {
-        this.vehicleHealth = h;
-    }
     public void setcolor(String c) {
         this.color = c;
     }
     public void setFuelCapacity(int f) {
         this.fuelCapacity = f;
+    }
+    public void setVehicleHealth(int h) {
+        this.vehicleHealth = h;
+    }
+    public void setwheels(int w) {
+        this.wheels = w;
+    }
+    public void setMaxSpeed(int s) {
+        this.maxSpeed = s;
     }
 }

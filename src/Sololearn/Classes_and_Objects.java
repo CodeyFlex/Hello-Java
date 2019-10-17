@@ -151,7 +151,7 @@ public class Classes_and_Objects {
 
         System.out.println(" ");
         System.out.println("Let's use the 'final' keyword to mark a variable constant: ");
-        System.out.println("In this case we will declare PI to be 3.14: ");
+        System.out.println("In this case i will declare PI to be 3.14: ");
         System.out.println(PI); //Declared up top
     }
 }

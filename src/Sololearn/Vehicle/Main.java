@@ -11,7 +11,7 @@ public class Main {
         truck.setwheels(4);
         truck.setMaxSpeed(60);
 
-        System.out.println("I have set alot of values for different attributes of my vehicle that i will print below: ");
+        System.out.println("I have set a lot of values for different attributes of my vehicle that i will print below: ");
         System.out.println("Color: " + truck.getcolor());
         System.out.println("Fuel Capacity: " + truck.getFuelCapacity());
         System.out.println("Vehicle health: " + truck.getVehicleHealth());
@@ -25,5 +25,30 @@ public class Main {
         System.out.println(" "); //Space for fanciness
         System.out.println("and also brake:");
         truck.Brake(); //Call method brake
+
+        Vehicle m = new Mercedes();
+        Vehicle b = new BMW();
+
+        System.out.println(" ");
+        System.out.println("My Mercedes also honks: ");
+        System.out.println(" ");
+        m.Honk();
+
+        System.out.println("My color is: " + m.getcolor());
+        System.out.println("My fuel Capacity is: " + m.getFuelCapacity());
+        System.out.println("My health is: " + m.getVehicleHealth());
+        System.out.println("I have " + m.getwheels() + " Wheels");
+        System.out.println("My maximum speed is: " + m.getmaxSpeed() + " mph");
+
+        System.out.println(" ");
+        System.out.println("And so does my BMW: ");
+        System.out.println(" ");
+        b.Honk();
+
+        System.out.println("My color is: " + b.getcolor());
+        System.out.println("My fuel Capacity is: " + b.getFuelCapacity());
+        System.out.println("My health is: " + b.getVehicleHealth());
+        System.out.println("I have " + b.getwheels() + " Wheels");
+        System.out.println("My maximum speed is: " + b.getmaxSpeed() + " mph");
     }
 }
