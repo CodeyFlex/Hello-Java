@@ -1,6 +1,6 @@
 package Sololearn.Vehicle;
 
-public class Vehicle {
+public abstract class Vehicle {
     public void Honk() { //Naming method
         System.out.println("Honk-Hoonk!"); //Declaring the methods function
     }
@@ -8,10 +8,12 @@ public class Vehicle {
     public void Brake() {
         System.out.println("Screeech!");
     }
-    private int maxSpeed; //Private so it only goes under my vehicle class
+
+    private String name;
+    private String color; //Private so it only goes under my vehicle class
+    private int maxSpeed;
     private int wheels;
     private int vehicleHealth;
-    private String color;
         Vehicle() { //This is a constructor, a constructor sets the default attribute, in this case the color of my vehicles
             color = "Blue"; //The default here is Blue
     }
@@ -27,6 +29,10 @@ public class Vehicle {
 
 
     //My getters
+
+    public String getname(){
+        return name;
+    }
     public String getcolor(){
         return color;
     }
@@ -45,6 +51,9 @@ public class Vehicle {
 
     //My setters
 
+    public void setname(String n) {
+        this.name = n;
+    }
     public void setcolor(String c) {
         this.color = c;
     }

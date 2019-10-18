@@ -20,8 +20,21 @@ public class More_on_Classes {
 
         //3. Polymorphism refers to the idea of "having many forms", it occurs when there is a hierarchy of classes related to each other through inheritance.
         //A call to a member method will cause a different implementation to be executed, depending on the type of the object invoking the method.
+        //Overridden methods cannot be more restricted than it's superclass method.
+        //Method overriding is also known as runtime polymorphism. (example found in vehicle folder (Mercedes and BMW class)
+        //When methods have the same name, but different parameters, it is known as method overloading.
+        //Overloading can be very useful when you need the same method functionality for different types of parameters.
+        //Another name for method overloading is compile-time polymorphism.
 
-        //4. Abstraction
+        //4. Abstraction: Data abstraction provides the outside world with only essential information, in a process of representing essential features without including implementation details.
+        //In Java, abstraction is achieved using abstract classes and interfaces.
+        //An abstract class is defined using the abstract keyword.
+        //If i were to make a game (which i will one day), it would be like gravity to the vehicles i created earlier. It's like a protected variable, except it's an entire function.
+        //So some of my classes shall inherit from this function.
+        //Abstract classes may or may not contain abstract methods, i.e., methods without body ( public void get(); )
+        //But, if a class has at least one abstract method, then the class must be declared abstract.
+        //If a class is declared abstract, it cannot be instantiated.
+        //If you inherit an abstract class, you have to provide implementations to all the abstract methods in it.
 
 
     }
