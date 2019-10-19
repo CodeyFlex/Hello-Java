@@ -1,7 +1,6 @@
 package Sololearn;
 
 
-
 public class More_on_Classes {
     public static void main(String[] args) {
 
@@ -36,6 +35,17 @@ public class More_on_Classes {
         //If a class is declared abstract, it cannot be instantiated.
         //If you inherit an abstract class, you have to provide implementations to all the abstract methods in it.
 
-
+        //Interfaces: An interface is a completely abstract class that contains only abstract methods.
+        //An interface is defined by the keyword "interface".
+        //It may only contain static final variables.
+        //It cannot contain a constructor because interfaces cannot be instantiated.
+        //Interfaces can extend other interfaces.
+        //A class can implement any number of interfaces.
+        //Each method in an interface is also implicitly abstract, so the abstract keyword is not needed.
+        //Methods in an interface are implicitly public.
+        //A class can inherit from just one superclass, but can implement multiple interfaces.
+        //Use the implements keyword to use an interface with your class.
+        //When you implement an interface, you need to override all of its methods.
+        //Example found in interface package
     }
 }
