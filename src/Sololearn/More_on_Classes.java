@@ -47,5 +47,27 @@ public class More_on_Classes {
         //Use the implements keyword to use an interface with your class.
         //When you implement an interface, you need to override all of its methods.
         //Example found in interface package
+
+        //Casting: Assigning a value of one type to a variable of another type is known as Type Casting.
+        //To cast a value to a specific type, place the type in parentheses and position it in front of the value:
+        {
+        System.out.println("Let's type cast an int to be 6.62, and then print the resulting value: 6");
+        int c = (int) 6.62;
+        System.out.println(c); //.62 is cut off
+
+        System.out.println(" ");
+        System.out.println("And again, but this time with a double with the value -93.732 with the resulting value -93: ");
+        double d = -93.732;
+        int b = (int) d;
+        System.out.println(b); //.732 is cut off
+    }
+        //Java supports automatic type casting of integers to floating points, since there is no loss of precision.
+        //type casting is mandatory when assigning floating point values to integer variables.
+
+        System.out.println(" ");
+        System.out.println("If i instead use math.floor for the double it becomes: ");
+        double d = -93.732;
+        double b = Math.floor(d);
+        System.out.println(b); //Rounded up instead of cut off
     }
 }
