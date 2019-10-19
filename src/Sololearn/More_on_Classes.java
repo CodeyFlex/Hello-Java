@@ -51,23 +51,37 @@ public class More_on_Classes {
         //Casting: Assigning a value of one type to a variable of another type is known as Type Casting.
         //To cast a value to a specific type, place the type in parentheses and position it in front of the value:
         {
-        System.out.println("Let's type cast an int to be 6.62, and then print the resulting value: 6");
-        int c = (int) 6.62;
-        System.out.println(c); //.62 is cut off
+            System.out.println("Let's type cast an int to be 6.62, and then print the resulting value: 6");
+            int c = (int) 6.62;
+            System.out.println(c); //.62 is cut off
 
-        System.out.println(" ");
-        System.out.println("And again, but this time with a double with the value -93.732 with the resulting value -93: ");
-        double d = -93.732;
-        int b = (int) d;
-        System.out.println(b); //.732 is cut off
-    }
+            System.out.println(" ");
+            System.out.println("And again, but this time with a double with the value -93.732 with the resulting value -93: ");
+            double d = -93.732;
+            int b = (int) d;
+            System.out.println(b); //.732 is cut off
+        }
         //Java supports automatic type casting of integers to floating points, since there is no loss of precision.
         //type casting is mandatory when assigning floating point values to integer variables.
+        {
+            System.out.println(" ");
+            System.out.println("If i instead use math.floor for the double it becomes: ");
+            double d = -93.732;
+            double b = Math.floor(d);
+            System.out.println(b); //Rounded up instead of cut off
+        }
+        //For classes, there are two types of casting:
 
-        System.out.println(" ");
-        System.out.println("If i instead use math.floor for the double it becomes: ");
-        double d = -93.732;
-        double b = Math.floor(d);
-        System.out.println(b); //Rounded up instead of cut off
+        //Upcasting: You can cast an instance of a subclass to its superclass.
+        //Example: Furniture a = new armchair();
+        //Java automatically upcasted the Cat type variable to the Animal type.
+
+        //Downcasting: Casting an object of a superclass to its subclass is called downcasting.
+        //Example: Furniture a = new armchair();
+        //((Armchair)a).makeSound();
+        //This will try to cast the variable a to the Cat type and call its makeSound() method.
+
+        //Why is upcasting automatic, downcasting manual? Well, upcasting can never fail.
+        //But if you have a group of different Animals and want to downcast them all to a Cat, then there's a chance that some of these Animals are actually Dogs, so the process fails.
     }
 }
