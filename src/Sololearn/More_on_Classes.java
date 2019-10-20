@@ -97,5 +97,10 @@ public class More_on_Classes {
         //So if we create another object of that class, the start method's implementation will be the one defined in the class. Example: (add to earlier code)
         //Vehicle d2 = new Machine();
         //d2.start(); //Outputs "Honk-Hoonk!"
+
+        //Inner Classes: Java supports nesting classes; a class can be a member of another class.
+        //The primary/outer class has an inner class. The inner class can access all of the member variables and methods of its outer class, but it cannot be accessed from any outside class.
+
+
     }
 }
