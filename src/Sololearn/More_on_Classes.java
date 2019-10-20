@@ -100,7 +100,13 @@ public class More_on_Classes {
 
         //Inner Classes: Java supports nesting classes; a class can be a member of another class.
         //The primary/outer class has an inner class. The inner class can access all of the member variables and methods of its outer class, but it cannot be accessed from any outside class.
+        //Example found in Inner_class package.
 
+        //Comparing objects: Remember that when you create objects, the variables store references to the objects.
+        //So, when you compare objects using the equality testing operator (==), it actually compares the references and not the object values.
+        //Example can be found in the Comparing_Objects package.
+
+        //equals(): Each object has a predefined equals() method that is used for semantical equality testing.
 
     }
 }
