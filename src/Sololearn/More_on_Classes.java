@@ -107,6 +107,18 @@ public class More_on_Classes {
         //Example can be found in the Comparing_Objects package.
 
         //equals(): Each object has a predefined equals() method that is used for semantical equality testing.
+        //Example can be found in the Comparing_Objects package.
 
+        //Enums: An Enum is a special type used to define collections of constants.
+        //Basically, Enums define variables that represent members of a fixed set.
+        //i should always use Enums when a variable (especially a method parameter) can only take one out of a small set of possible values.
+        //If i use Enums instead of integers (or String codes), i increase compile-time checking and avoid errors from passing in invalid constants, and i'll document which values are legal to use.
+        //Example can be found in the Enum package.
+
+        //The Java API is a collection of classes and interfaces that have been written for me to use, and can be found here: http://docs.oracle.com/javase/7/docs/api/
+        //Once i locate the package i want to use, i need to import it into my code.
+        //The package can be imported using the import keyword.
+        //Example: import java.awt.*;
+        //The awt package contains all of the classes for creating user interfaces and for painting graphics and images.
     }
 }
