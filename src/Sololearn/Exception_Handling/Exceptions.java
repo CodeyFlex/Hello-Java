@@ -20,6 +20,17 @@ public class Exceptions {
                 System.out.println("Not possible"); //Output if exception has been encountered.
                 System.out.println("Try again");
                 System.out.println(" ");
+                //I can do several of these like this:
+                //try {
+                //some code
+                //} catch (ExceptionType1 e1) {
+                //Catch block
+                //} catch (ExceptionType2 e2) {
+                //Catch block
+                //} catch (ExceptionType3 e3) {
+                //Catch block
+
+                //This could be done to catch a specific exception, then a less specific exception, and lastly just catching everything else that might happen.
             }
         } while(x==1); //Loop as long as x equals 1
     }
