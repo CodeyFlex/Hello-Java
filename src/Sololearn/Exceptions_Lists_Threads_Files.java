@@ -12,6 +12,16 @@ public class Exceptions_Lists_Threads_Files {
     //- Insufficient memory and other issues related to physical resources.
     //So exceptions are caused by user error, programmer error, or physical resource issues. However, a well-written program should handle all possible exceptions.
     //Example can be found in Exception_Handling package.
+    //There are two exception types, checked and unchecked (also called runtime).
+    //The main difference is that checked exceptions are checked when compiled, while unchecked exceptions are checked at runtime.
+
+    //Unchecked exceptions: (Example would be when dividing by 0 in the Exception_Handling package.)
+    //Represent defects in the program(bugs),  often invalid arguments passed to a non-private method.
+    //I don't need to establish a policy for them.
+
+    //Checked exceptions:
+    //Represent invalid conditions in areas outside the immediate control of the program,  often invalid user input,  database problems, network,  absent files.
+    //I must establish a policy for them by a try/catch block.
 
     //Threads: Java is a multi-threaded programming language.
     //This means that my program can make optimal use of available resources by running two or more components concurrently, with each component handling a different task.
