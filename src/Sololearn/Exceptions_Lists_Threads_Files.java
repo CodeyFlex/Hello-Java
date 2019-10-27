@@ -81,5 +81,10 @@ public class Exceptions_Lists_Threads_Files {
         //So in Summary:
         //Use an ArrayList when rapid access to data is needed.
         //Use a LinkedList when i need to make a large number of inserts and/or deletes.
+
+        //Hashmap: is used for storing data collections as key and value pairs. One object is used as a key (index) to another object (the value).
+        //A HashMap cannot contain duplicate keys. Adding a new item with a key that already exists overwrites the old element.
+        //The HashMap class provides containsKey and containsValue methods that determine the presence of a specified key or value.
+        //If i try to get a value that is not present in my map, it will return the value: null.
     }
 }
