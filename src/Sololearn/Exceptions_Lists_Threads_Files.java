@@ -1,6 +1,7 @@
 package Sololearn;
 
-import java.util.ArrayList; //Neccesary to use ArrayList
+import java.util.ArrayList; //Necessary to use ArrayList
+import java.util.LinkedList; //Necessary to use LinkedList
 
 public class Exceptions_Lists_Threads_Files {
 
@@ -40,6 +41,7 @@ public class Exceptions_Lists_Threads_Files {
     //Example:
     public static void main(String[] args) {
         ArrayList<String> superPowers = new ArrayList<String>(4); //initial value is 4, but is increased to 5 automatically.
+        System.out.println("ArrayList:\n ");
         superPowers.add("Fire Breath"); //Adds a new object to the array list.
         superPowers.add("Ice Breath");
         superPowers.add("Gas Breath");
@@ -53,5 +55,31 @@ public class Exceptions_Lists_Threads_Files {
         System.out.println(superPowers.size()); //Outputs size of the array list.
         System.out.println(superPowers); //Outputs the entire array list.
         //Similar examples can be found in the Arrays class
+
+        //LinkedList: is very similar in syntax to the ArrayList.
+        //I can easily change an ArrayList to a LinkedList by changing the object type.
+        //I cannot specify an initial capacity for the LinkedList.
+        LinkedList<String> linkedSuperPowers = new LinkedList<String>();
+        System.out.println("\nLinkedlist: \n");
+        linkedSuperPowers.add("Hot Breath");
+        linkedSuperPowers.add("Cold Breath");
+        linkedSuperPowers.add("Stinky Breath");
+        linkedSuperPowers.add("Burning Breath");
+        linkedSuperPowers.remove("Stinky Breath");
+        linkedSuperPowers.add("Yawny Breath");
+        linkedSuperPowers.add("Nuke Breath");
+        System.out.println(linkedSuperPowers.get(4));
+        System.out.println(linkedSuperPowers.contains("Hot Breath"));
+        System.out.println(linkedSuperPowers.size());
+        System.out.println(linkedSuperPowers);
+
+        //The most notable difference between the LinkedList and the ArrayList is in the way they store objects.
+        //The ArrayList is better for storing and accessing data, as it is very similar to a normal array.
+        //The LinkedList is better for manipulating data, such as making numerous inserts and deletes.
+        //In addition to storing the object, the LinkedList stores the memory address (or link) of the element that follows it.
+        //It's called a LinkedList because each element contains a link to the neighboring element.
+        //So in Summary:
+        //Use an ArrayList when rapid access to data is needed.
+        //Use a LinkedList when i need to make a large number of inserts and/or deletes.
     }
 }
