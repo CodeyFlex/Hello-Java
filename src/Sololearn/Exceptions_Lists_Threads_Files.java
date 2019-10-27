@@ -122,5 +122,8 @@ public class Exceptions_Lists_Threads_Files {
         //next(): Returns the next object and advances the iterator.
         //remove(): Removes the last object that was returned by next from the collection.
         //Example can be found in Iterator Package:
+
+        //Working with files: The java.io package includes a File class that allows you to work with files.
+        //Example can be found in files package
     }
 }
