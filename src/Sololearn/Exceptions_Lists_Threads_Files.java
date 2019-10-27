@@ -105,11 +105,22 @@ public class Exceptions_Lists_Threads_Files {
 
         //Hashing: A hash table stores information through a mechanism called hashing, in which a key's informational content is used to determine a unique value called a hash code.
         //Each element in the HashSet is associated with its unique hash code.
-        
+
         //Other useful methods in the Collections class:
         //max(Collection c): Returns the maximum element in c as determined by natural ordering.
         //min(Collection c): Returns the minimum element in c as determined by natural ordering.
         //reverse(List list): Reverses the sequence in list.
         //shuffle(List list): Shuffles (i.e., randomizes) the elements in list.
+
+        //Iterators: is an object that enables to cycle through a collection, obtain or remove elements.
+        //Before i can access a collection through an iterator, i must obtain one.
+        //Each of the collection classes provides an iterator() method that returns an iterator to the start of the collection.
+        //By using this iterator object, i can access each element in the collection, one element at a time.
+
+        //The Iterator class provides the following methods:
+        //hasNext(): Returns true if there is at least one more element; otherwise, it returns false.
+        //next(): Returns the next object and advances the iterator.
+        //remove(): Removes the last object that was returned by next from the collection.
+        //Example can be found in Iterator Package:
     }
 }
