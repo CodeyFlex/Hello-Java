@@ -1,8 +1,6 @@
 package Sololearn;
 
-import java.util.ArrayList; //Necessary to use ArrayList
-import java.util.HashSet;
-import java.util.LinkedList; //Necessary to use LinkedList
+import java.util.*;
 
 public class Exceptions_Lists_Threads_Files {
 
@@ -93,15 +91,25 @@ public class Exceptions_Lists_Threads_Files {
         //HashSet class:
         System.out.println("\nHashSet:\n");
         HashSet<String> set = new HashSet<String>();
-        set.add("The");
         set.add("Coolest");
         set.add("Set");
         System.out.println(set);
+
+        System.out.println("\nLet's try sorting this set and printing it again:\n");
+        List<String> setList = new ArrayList<String>(set); //Turning hashSet into a list
+        Collections.sort(setList); //Sorting my list
+        System.out.println(setList);
 
         //The HashSet class does not automatically retain the order of the elements as they're added.
         //To order the elements, use a LinkedHashSet, which maintains a linked list of the set's elements in the order in which they were inserted.
 
         //Hashing: A hash table stores information through a mechanism called hashing, in which a key's informational content is used to determine a unique value called a hash code.
         //Each element in the HashSet is associated with its unique hash code.
+        
+        //Other useful methods in the Collections class:
+        //max(Collection c): Returns the maximum element in c as determined by natural ordering.
+        //min(Collection c): Returns the minimum element in c as determined by natural ordering.
+        //reverse(List list): Reverses the sequence in list.
+        //shuffle(List list): Shuffles (i.e., randomizes) the elements in list.
     }
 }
