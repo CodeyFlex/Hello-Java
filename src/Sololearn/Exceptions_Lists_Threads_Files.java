@@ -1,5 +1,7 @@
 package Sololearn;
 
+import java.util.ArrayList; //Neccesary to use ArrayList
+
 public class Exceptions_Lists_Threads_Files {
 
     //Exceptions: is a problem that occurs during program execution. Exceptions cause abnormal termination of the program.
@@ -32,4 +34,24 @@ public class Exceptions_Lists_Threads_Files {
     //2. Implementing the Runnable interface. (Example in InterfaceThread package)
     //If i extend a class, it cannot extend any other class. That's why implementing a Runnable interface is smart, as it has the ability to extend another class.
 
+    //ArrayList: Can be used to store and manipulate groups of objects.
+    //Standard Java arrays are of a fixed length, which means that after they are created, they cannot expand or shrink.
+    //ArrayLists are created with an initial size, but when this size is exceeded, the collection is automatically enlarged.
+    //Example:
+    public static void main(String[] args) {
+        ArrayList<String> superPowers = new ArrayList<String>(4); //initial value is 4, but is increased to 5 automatically.
+        superPowers.add("Fire Breath"); //Adds a new object to the array list.
+        superPowers.add("Ice Breath");
+        superPowers.add("Gas Breath");
+        superPowers.add("Lava Breath");
+        superPowers.remove("Gas Breath"); //Removes an object from the array list.
+        superPowers.add("Invisibility");
+        superPowers.add("Lightning Breath");
+        /* superPowers.clear() to clear the ArrayList */
+        System.out.println(superPowers.get(4)); //Outputs the fifth object in the array list.
+        System.out.println(superPowers.contains("Fire Breath")); //Checks if Fire Breath string is inside the array list.
+        System.out.println(superPowers.size()); //Outputs size of the array list.
+        System.out.println(superPowers); //Outputs the entire array list.
+        //Similar examples can be found in the Arrays class
+    }
 }
