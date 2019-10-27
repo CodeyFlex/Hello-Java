@@ -1,6 +1,7 @@
 package Sololearn;
 
 import java.util.ArrayList; //Necessary to use ArrayList
+import java.util.HashSet;
 import java.util.LinkedList; //Necessary to use LinkedList
 
 public class Exceptions_Lists_Threads_Files {
@@ -86,5 +87,21 @@ public class Exceptions_Lists_Threads_Files {
         //A HashMap cannot contain duplicate keys. Adding a new item with a key that already exists overwrites the old element.
         //The HashMap class provides containsKey and containsValue methods that determine the presence of a specified key or value.
         //If i try to get a value that is not present in my map, it will return the value: null.
+        //Example can be found in the Hashmap package
+
+        //Sets: A Set is a collection that cannot contain duplicate elements. It models the mathematical set abstraction.
+        //HashSet class:
+        System.out.println("\nHashSet:\n");
+        HashSet<String> set = new HashSet<String>();
+        set.add("The");
+        set.add("Coolest");
+        set.add("Set");
+        System.out.println(set);
+
+        //The HashSet class does not automatically retain the order of the elements as they're added.
+        //To order the elements, use a LinkedHashSet, which maintains a linked list of the set's elements in the order in which they were inserted.
+
+        //Hashing: A hash table stores information through a mechanism called hashing, in which a key's informational content is used to determine a unique value called a hash code.
+        //Each element in the HashSet is associated with its unique hash code.
     }
 }
