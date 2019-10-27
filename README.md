@@ -42,3 +42,5 @@ As some dude/dudette said:
 
 (╯°□°)╯︵ ┻━┻  | (╯°□°)╯ (╯°□°)╯
 ------------- | -------------
+
+<img src="Images/cert_1068_15507619.jpg" width="400" >
