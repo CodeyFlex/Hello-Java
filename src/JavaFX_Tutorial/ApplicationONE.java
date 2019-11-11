@@ -1,8 +1,12 @@
 package JavaFX_Tutorial;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
@@ -11,6 +15,7 @@ import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.w3c.dom.ls.LSOutput;
 
 public class ApplicationONE extends Application {
 
@@ -27,7 +32,6 @@ public class ApplicationONE extends Application {
         mainStage.setTitle("Flexy Application");
         mainStage.setWidth(600);
         mainStage.setHeight(600);
-        mainStage.toFront(); //Puts this window in front of the others.
 
         VBox parent = new VBox(); //Parent/root node, stands for vertical box as it displays labels vertically
 
@@ -41,6 +45,19 @@ public class ApplicationONE extends Application {
         label2.setRotate(22); //Rotates the label
         parent.getChildren().add(label1);
         parent.getChildren().add(label2); //Adds the label to the parent node (VBox), can also do .addAll(label1, label2); so on.
+
+        Hyperlink link = new Hyperlink("Button that prints"); //Creates a hyperlink
+        parent.getChildren().add(link); //gets the hyperlink
+        link.setOnAction(e -> { //link name: "link" referenced at start, and now i will decide the action when the link is clicked on
+            System.out.println("Button was pressed"); //Action when link is clicked on
+        });
+        //Alternative way of doing it:
+        //link.setOnAction(new EventHandler<ActionEvent>() {
+        //    @Override
+       //     public void handle(ActionEvent actionEvent) {
+       //         System.out.println("Button was pressed v2");
+       //     }
+       // });
 
         Scene scene1 = new Scene(parent); //My scene that everything will go under
         scene1.setCursor(Cursor.CROSSHAIR); //Changes cursor to a crosshair when using the scene
@@ -75,7 +92,7 @@ public class ApplicationONE extends Application {
         captorWindow.setWidth(300);
         captorWindow.setHeight(200);
         captorWindow.setTitle("I am the captor of all these windows, mwahaha!");
-        // delete later. captorWindow.toFront(); //Puts this window in front of the others.
+        captorWindow.toFront(); //Puts this window in front of the others.
         //There's also .setAlwaysOnTop(true); and .setFullScreen(true);
         captorWindow.initModality(Modality.APPLICATION_MODAL); //Other windows can't be used until this one is closed, like if you go to settings in most applications
         //(Modality.NONE); is the default value, and allows for interaction with any window
