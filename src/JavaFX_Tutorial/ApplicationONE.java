@@ -35,6 +35,29 @@ public class ApplicationONE extends Application {
         //root.getStylesheets().add("path");
         //As long as the VBox has child nodes
 
+        ToggleButton tButton1 = new ToggleButton("White"); //creates a new toggleable button
+        tButton1.setOnAction(e -> {
+            root.setStyle("-fx-background-color: #ffffff");
+        });
+        ToggleButton tButton2 = new ToggleButton("Green");
+        tButton2.setOnAction(e -> {
+            root.setStyle("-fx-background-color: #10ff00");
+        });
+        ToggleGroup buttonGroup = new ToggleGroup(); //The group makes it so that only one button can be toggled at a time
+        tButton1.setToggleGroup(buttonGroup); //Adds button to the toggle group
+        tButton2.setToggleGroup(buttonGroup);
+
+        RadioButton radioB1 = new RadioButton("Pink");
+        radioB1.setOnAction(e -> {
+            root.setStyle("-fx-background-color: #ff5af5");
+        });
+        RadioButton radioB2 = new RadioButton("Black");
+        radioB2.setOnAction(e -> {
+            root.setStyle("-fx-background-color: #000000");
+        });
+        radioB1.setToggleGroup(buttonGroup);
+        radioB2.setToggleGroup(buttonGroup);
+
         Label corgiAction = new Label("*Awaiting action*");
 
         MenuItem item1 = new MenuItem("Bark"); //Adds a menu button to my application
@@ -94,6 +117,7 @@ public class ApplicationONE extends Application {
         root.getChildren().add(button1);
         root.getChildren().add(menuButton);
         root.getChildren().add(corgiAction);
+        root.getChildren().addAll(tButton1, tButton2, radioB1, radioB2);
 
         Hyperlink link = new Hyperlink("Button that prints"); //Creates a hyperlink
         link.setStyle("-fx-background-color: #ffc67b"); //setStyle directly to this particular hyperlink
