@@ -14,7 +14,7 @@ import javafx.stage.StageStyle;
 
 import javax.swing.*;
 
-public class ApplicationONE extends Application {
+public class VBox_Application extends Application {
 
     //optional - method runs before start method is called
     @Override
@@ -30,7 +30,7 @@ public class ApplicationONE extends Application {
         mainStage.setWidth(600);
         mainStage.setHeight(800);
 
-        VBox root = new VBox(); //Parent/root node, stands for vertical box as it displays labels vertically
+        javafx.scene.layout.VBox root = new javafx.scene.layout.VBox(); //Parent/root node, stands for vertical box as it displays labels vertically
         //I can also add stylesheets to my VBox
         //root.getStylesheets().add("path");
         //As long as the VBox has child nodes
