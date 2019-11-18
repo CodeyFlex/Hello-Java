@@ -3,9 +3,7 @@ package JavaFX_Tutorial;
 import javafx.application.Application;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -13,6 +11,8 @@ import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
+import javax.swing.*;
 
 public class ApplicationONE extends Application {
 
@@ -34,6 +34,30 @@ public class ApplicationONE extends Application {
         //I can also add stylesheets to my VBox
         //root.getStylesheets().add("path");
         //As long as the VBox has child nodes
+
+        Label corgiAction = new Label("*Awaiting action*");
+
+        MenuItem item1 = new MenuItem("Bark"); //Adds a menu button to my application
+        item1.setOnAction(e -> {
+            corgiAction.setText("Bark!");
+        });
+
+        MenuItem item2 = new MenuItem("Fart");
+        item2.setOnAction(e -> {
+            corgiAction.setText("*Neighbours house explodes*");
+        });
+
+        MenuItem item3 = new MenuItem("Sit");
+        item3.setOnAction(e -> {
+            corgiAction.setText("*Innocent worker ant crushed by corgi butt*");
+        });
+
+        MenuItem item4 = new MenuItem("Sleep");
+        item4.setOnAction(e -> {
+            corgiAction.setText("zzzZZZzzzzZZZzzz");
+        });
+
+        MenuButton menuButton = new MenuButton("Prefered action", null, item1, item2, item3, item4);
 
         Button button1 = new Button("Click Me"); //Creating a new button for my GUI
         button1.setStyle("-fx-font-size: 15px"); //Changing font size of button
@@ -63,11 +87,13 @@ public class ApplicationONE extends Application {
 
         Label label3 = new Label("I am uniqueee");
         label3.setId("unique-label"); //unique id so i can call this in my stylesheets
-        
+
         root.getChildren().add(label1);
         root.getChildren().add(label2); //Adds the label to the parent node (VBox), can also do .addAll(label1, label2); so on.
         root.getChildren().add(label3);
         root.getChildren().add(button1);
+        root.getChildren().add(menuButton);
+        root.getChildren().add(corgiAction);
 
         Hyperlink link = new Hyperlink("Button that prints"); //Creates a hyperlink
         link.setStyle("-fx-background-color: #ffc67b"); //setStyle directly to this particular hyperlink
