@@ -3,6 +3,7 @@ package JavaFX_Tutorial;
 import javafx.application.Application;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
@@ -34,6 +35,22 @@ public class ApplicationONE extends Application {
         //root.getStylesheets().add("path");
         //As long as the VBox has child nodes
 
+        Button button1 = new Button("Click Me"); //Creating a new button for my GUI
+        button1.setStyle("-fx-font-size: 15px"); //Changing font size of button
+        button1.setText("_Maybe click me?"); //changing text inside button (_ for mnemonic)
+        button1.setWrapText(true); //Makes text visible even if it doesn't fit in the box
+
+        button1.setMinSize(50,50); //Button can never go lower than this size
+        button1.setPrefSize(100,50); //App will try to size the button by this value, but if it can't it will go to min/max size
+        button1.setMaxSize(150,150); //Button can never go higher than this size
+
+        //Mnemonic: shortcut for buttons (hold alt + first letter of shortcut to get a certain shortcut, alt + f to get file for example)
+        button1.setMnemonicParsing(true); //Put _ in front of word, to make it the mnemonic shortcut letter
+
+        button1.setOnAction(e -> { //Action that occurs after clicking button
+            System.out.println("Clicked maybe button");
+        });
+
         ImageView image1 = new ImageView("https://www.idenyt.dk/globalassets/denmark/kaledyr-2/corgi/corgi_jumping.jpg"); //Inserts image into scene from a url
         root.getChildren().add(image1);
 
@@ -46,10 +63,11 @@ public class ApplicationONE extends Application {
 
         Label label3 = new Label("I am uniqueee");
         label3.setId("unique-label"); //unique id so i can call this in my stylesheets
-
+        
         root.getChildren().add(label1);
         root.getChildren().add(label2); //Adds the label to the parent node (VBox), can also do .addAll(label1, label2); so on.
         root.getChildren().add(label3);
+        root.getChildren().add(button1);
 
         Hyperlink link = new Hyperlink("Button that prints"); //Creates a hyperlink
         link.setStyle("-fx-background-color: #ffc67b"); //setStyle directly to this particular hyperlink
