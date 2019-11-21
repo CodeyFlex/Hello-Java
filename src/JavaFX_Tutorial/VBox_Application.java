@@ -30,18 +30,18 @@ public class VBox_Application extends Application {
         mainStage.setWidth(600);
         mainStage.setHeight(800);
 
-        javafx.scene.layout.VBox root = new javafx.scene.layout.VBox(); //Parent/root node, stands for vertical box as it displays labels vertically
+        javafx.scene.layout.VBox vRoot = new javafx.scene.layout.VBox(); //Parent/root node, stands for vertical box as it displays labels vertically
         //I can also add stylesheets to my VBox
         //root.getStylesheets().add("path");
         //As long as the VBox has child nodes
 
         ToggleButton tButton1 = new ToggleButton("White"); //creates a new toggleable button
         tButton1.setOnAction(e -> {
-            root.setStyle("-fx-background-color: #ffffff");
+            vRoot.setStyle("-fx-background-color: #ffffff");
         });
         ToggleButton tButton2 = new ToggleButton("Green");
         tButton2.setOnAction(e -> {
-            root.setStyle("-fx-background-color: #10ff00");
+            vRoot.setStyle("-fx-background-color: #10ff00");
         });
         ToggleGroup buttonGroup = new ToggleGroup(); //The group makes it so that only one button can be toggled at a time
         tButton1.setToggleGroup(buttonGroup); //Adds button to the toggle group
@@ -49,11 +49,11 @@ public class VBox_Application extends Application {
 
         RadioButton radioB1 = new RadioButton("Pink");
         radioB1.setOnAction(e -> {
-            root.setStyle("-fx-background-color: #ff5af5");
+            vRoot.setStyle("-fx-background-color: #ff5af5");
         });
         RadioButton radioB2 = new RadioButton("Black");
         radioB2.setOnAction(e -> {
-            root.setStyle("-fx-background-color: #000000");
+            vRoot.setStyle("-fx-background-color: #000000");
         });
         radioB1.setToggleGroup(buttonGroup);
         radioB2.setToggleGroup(buttonGroup);
@@ -99,7 +99,7 @@ public class VBox_Application extends Application {
         });
 
         ImageView image1 = new ImageView("https://www.idenyt.dk/globalassets/denmark/kaledyr-2/corgi/corgi_jumping.jpg"); //Inserts image into scene from a url
-        root.getChildren().add(image1);
+        vRoot.getChildren().add(image1);
 
         Label label1 = new Label("I'm a Corgi!"); //child node to parent node
         label1.setTextFill(Color.web("#34eb3a")); //Changes color of label
@@ -111,17 +111,17 @@ public class VBox_Application extends Application {
         Label label3 = new Label("I am uniqueee");
         label3.setId("unique-label"); //unique id so i can call this in my stylesheets
 
-        root.getChildren().add(label1);
-        root.getChildren().add(label2); //Adds the label to the parent node (VBox), can also do .addAll(label1, label2); so on.
-        root.getChildren().add(label3);
-        root.getChildren().add(button1);
-        root.getChildren().add(menuButton);
-        root.getChildren().add(corgiAction);
-        root.getChildren().addAll(tButton1, tButton2, radioB1, radioB2);
+        vRoot.getChildren().add(label1);
+        vRoot.getChildren().add(label2); //Adds the label to the parent node (VBox), can also do .addAll(label1, label2); so on.
+        vRoot.getChildren().add(label3);
+        vRoot.getChildren().add(button1);
+        vRoot.getChildren().add(menuButton);
+        vRoot.getChildren().add(corgiAction);
+        vRoot.getChildren().addAll(tButton1, tButton2, radioB1, radioB2);
 
         Hyperlink link = new Hyperlink("Button that prints"); //Creates a hyperlink
         link.setStyle("-fx-background-color: #ffc67b"); //setStyle directly to this particular hyperlink
-        root.getChildren().add(link); //gets the hyperlink
+        vRoot.getChildren().add(link); //gets the hyperlink
         link.setOnAction(e -> { //link name: "link" referenced at start, and now i will decide the action when the link is clicked on
             System.out.println("Button was pressed"); //Action when link is clicked on
         });
@@ -133,7 +133,7 @@ public class VBox_Application extends Application {
        //     }
        // });
 
-        Scene scene1 = new Scene(root); //My scene that everything will go under
+        Scene scene1 = new Scene(vRoot); //My scene that everything will go under
         scene1.getStylesheets().add("JavaFX_Tutorial/stylesheets/styles.css"); //Gets styles from my css file. (this apparently doesn't work if i name my VBox parent?)
         scene1.setCursor(Cursor.CROSSHAIR); //Changes cursor to a crosshair when using the scene
 
