@@ -7,15 +7,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+
+import java.util.Objects;
 
 public class Text_Adventure_Class extends Application {
 
     //Starting the application
     @Override
-    public void init() throws Exception { //init, Useful for loading pictures and such, before the application launches.
+    public void init() throws Exception {
         System.out.println("Let the adventure begin!");
     }
 
@@ -41,11 +42,43 @@ public class Text_Adventure_Class extends Application {
         Button reply2 = new Button("Why are you talking to me?");// add colors depending on the answers tone
 
         //My on actions
-        reply1.setOnAction(e -> {
+
+        //Reply 1.1
+        reply1.setOnAction(f -> {
             replyLabel.setText("Nice to finally meet you! have you met the others yet?");
+            reply1.setText("Not yet, no");
+            reply2.setText("Don't want to");
+
+            //Reply 1.2
+            reply1.setOnAction(f2 -> {
+                replyLabel.setText("Well let's go and i'll introduce you!");
+                reply1.setText("Alright!");
+                reply2.setText("Too scary");
+            });
+            reply2.setOnAction(f2 -> {
+                replyLabel.setText("Why not?");
+                reply1.setText("I'm really into peanuts");
+                reply2.setText("I'm afraid i'll eat their peanuts");
+            });
         });
+
+        //Reply 2.1
         reply2.setOnAction(e -> {
             replyLabel.setText("Rude!");
+            reply1.setText("I'm sorry");
+            reply2.setText("No u");
+
+            //Reply 2.2
+            reply1.setOnAction(e2 -> {
+                replyLabel.setText("I can tell you're nervous, so i'll let it slide this time");
+                reply1.setText("Thanks for your understanding");
+                reply2.setText("No u");
+            });
+            reply2.setOnAction(e2 -> {
+                replyLabel.setText("How was i rude?!");
+                reply1.setText("Well... i dunno, i'm just nervous");
+                reply2.setText("You know what you did");
+            });
         });
 
         //Importing my imports
@@ -55,8 +88,8 @@ public class Text_Adventure_Class extends Application {
         //text_Adventure_Main_BorderPane.setLeft(name);
         text_Adventure_Main_BorderPane.setBottom(buttons);
 
-            //HBox
-            buttons.getChildren().addAll(reply1, reply2);
+        //HBox
+        buttons.getChildren().addAll(reply1, reply2);
 
         //Positioning
         BorderPane.setAlignment(infoLabel, Pos.TOP_CENTER);
@@ -69,7 +102,6 @@ public class Text_Adventure_Class extends Application {
         buttons.setSpacing(20);
 
         text_Adventure_Main_BorderPane.setPadding(new Insets(45));
-
 
         //Scene setup
         Scene mainScene = new Scene(text_Adventure_Main_BorderPane); //My scene that everything will go under
