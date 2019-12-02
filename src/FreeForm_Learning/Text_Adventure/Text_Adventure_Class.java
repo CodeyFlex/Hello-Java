@@ -10,8 +10,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-import java.util.Objects;
-
 public class Text_Adventure_Class extends Application {
 
     //Starting the application

@@ -1,5 +1,7 @@
 package FreeForm_Learning.Text_Adventure;
 
+import FreeForm_Learning.Text_Adventure.Characters.Character;
+import FreeForm_Learning.Text_Adventure.Characters.Goblin;
 import javafx.application.Application;
 
 public class Main {
