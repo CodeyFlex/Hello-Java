@@ -3,17 +3,18 @@ package FreeForm_Learning.Text_Adventure.Characters;
 public class Goblin extends Character {
 
     //Character Actions
-    public void Greeting() {
-        System.out.println("HAAI!");
+    public String Greeting() {
+        return "HAAI!";
     }
 
     //Character Variables
 
-    Goblin() {
+    public Goblin() {
         setName("Goblin");
         setHealth(100);
         setDamage(10);
         setCharisma(1);
+        setGold(100);
     }
 
 }

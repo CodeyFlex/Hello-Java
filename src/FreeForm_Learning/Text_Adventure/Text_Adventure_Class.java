@@ -1,5 +1,7 @@
 package FreeForm_Learning.Text_Adventure;
 
+import FreeForm_Learning.Text_Adventure.Characters.*;
+import FreeForm_Learning.Text_Adventure.Characters.Character;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -30,11 +32,15 @@ public class Text_Adventure_Class extends Application {
         //Box setups
         BorderPane text_Adventure_Main_BorderPane = new BorderPane();
         HBox buttons = new HBox();
+        HBox dialogInfo = new HBox();
+
+        //Character Imports
+        Character goblin = new Goblin();
 
         //My Imports
 
-        Label infoLabel = new Label("Welcome!");
-        Label replyLabel = new Label("Hello traveler!");
+        Label replyLabel = new Label(goblin.Greeting());
+        Label conversationPartner = new Label(goblin.getName());
         //label3.setId("unique-label"); //unique id so i can call this in my stylesheets
         Button reply1 = new Button("Hi there!");
         Button reply2 = new Button("Why are you talking to me?");// add colors depending on the answers tone
@@ -80,24 +86,30 @@ public class Text_Adventure_Class extends Application {
         });
 
         //Importing my imports
-        text_Adventure_Main_BorderPane.setTop(infoLabel);
+        text_Adventure_Main_BorderPane.setTop(dialogInfo);
         text_Adventure_Main_BorderPane.setCenter(replyLabel);
         //text_Adventure_Main_BorderPane.setRight(name);
         //text_Adventure_Main_BorderPane.setLeft(name);
         text_Adventure_Main_BorderPane.setBottom(buttons);
 
-        //HBox
+        //HBox buttons
         buttons.getChildren().addAll(reply1, reply2);
 
+        //HBox dialogInfo
+        dialogInfo.getChildren().addAll(conversationPartner);
+
         //Positioning
-        BorderPane.setAlignment(infoLabel, Pos.TOP_CENTER);
+        //BorderPane.setAlignment(, Pos.TOP_CENTER); //Location
         BorderPane.setAlignment(replyLabel, Pos.CENTER);
-        //BorderPane.setAlignment(name, Pos.CENTER_RIGHT);
-        //BorderPane.setAlignment(name, Pos.CENTER_LEFT);
+        //BorderPane.setAlignment(name, Pos.CENTER_RIGHT); //Picture of dialog partner
+        //BorderPane.setAlignment(name, Pos.CENTER_LEFT); //Picture of player
         BorderPane.setAlignment(buttons, Pos.BOTTOM_CENTER); //HBox
 
         buttons.setAlignment(Pos.CENTER);
         buttons.setSpacing(20);
+
+        dialogInfo.setSpacing(30);
+        dialogInfo.setStyle("-fx-font-size: 15px");
 
         text_Adventure_Main_BorderPane.setPadding(new Insets(45));
 

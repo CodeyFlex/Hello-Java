@@ -4,8 +4,8 @@ public abstract class Character {
 
     //Character actions
 
-    public void Greeting() {
-        System.out.println("Hello!");
+    public String Greeting() {
+        return "Hello!";
     }
 
     //Character Variables
@@ -14,6 +14,7 @@ public abstract class Character {
     private int Health;
     private int Damage;
     private int Charisma;
+    private int Gold;
 
     //Getters
 
@@ -29,6 +30,9 @@ public abstract class Character {
     public int getCharisma() {
         return Charisma;
     }
+    public int getGold(){
+        return Gold;
+    }
 
     //Setters
 
@@ -43,5 +47,8 @@ public abstract class Character {
     }
     public void setCharisma(int characterCharisma) {
         this.Charisma = characterCharisma;
+    }
+    public void setGold(int characterGold){
+        this.Gold = characterGold;
     }
 }
