@@ -8,8 +8,11 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Text_Adventure_Class extends Application {
@@ -33,17 +36,32 @@ public class Text_Adventure_Class extends Application {
         BorderPane text_Adventure_Main_BorderPane = new BorderPane();
         HBox buttons = new HBox();
         HBox dialogInfo = new HBox();
+        VBox dialogPartnerInfo = new VBox();
+        VBox dialogPlayerInfo = new VBox();
 
         //Character Imports
         Character goblin = new Goblin();
 
         //My Imports
 
+            //Labels
         Label replyLabel = new Label(goblin.Greeting());
         Label conversationPartner = new Label(goblin.getName());
+        Label playerName = new Label("Player"); //Get player name at some point
         //label3.setId("unique-label"); //unique id so i can call this in my stylesheets
+
+            //Buttons
         Button reply1 = new Button("Hi there!");
         Button reply2 = new Button("Why are you talking to me?");// add colors depending on the answers tone
+
+            //Images
+        ImageView dialogPartnerImage = new ImageView();
+        Image goblinImage = new Image("file:Images/goblinImg.png"); //File: made this work
+        dialogPartnerImage.setImage(goblinImage);
+
+        ImageView playerImage = new ImageView();
+        Image knightImage = new Image("file:Images/knightImg.png"); //File: made this work
+        playerImage.setImage(knightImage);
 
         //My on actions
 
@@ -88,21 +106,27 @@ public class Text_Adventure_Class extends Application {
         //Importing my imports
         text_Adventure_Main_BorderPane.setTop(dialogInfo);
         text_Adventure_Main_BorderPane.setCenter(replyLabel);
-        //text_Adventure_Main_BorderPane.setRight(name);
-        //text_Adventure_Main_BorderPane.setLeft(name);
+        text_Adventure_Main_BorderPane.setRight(dialogPlayerInfo);
+        text_Adventure_Main_BorderPane.setLeft(dialogPartnerInfo);
         text_Adventure_Main_BorderPane.setBottom(buttons);
 
         //HBox buttons
         buttons.getChildren().addAll(reply1, reply2);
 
         //HBox dialogInfo
-        dialogInfo.getChildren().addAll(conversationPartner);
+        dialogInfo.getChildren().addAll();
+
+        //VBox dialogPartnerInfo
+        dialogPartnerInfo.getChildren().addAll(conversationPartner, dialogPartnerImage);
+
+        //VBox dialogPlayerInfo
+        dialogPlayerInfo.getChildren().addAll(playerName, playerImage);
 
         //Positioning
         //BorderPane.setAlignment(, Pos.TOP_CENTER); //Location
         BorderPane.setAlignment(replyLabel, Pos.CENTER);
-        //BorderPane.setAlignment(name, Pos.CENTER_RIGHT); //Picture of dialog partner
-        //BorderPane.setAlignment(name, Pos.CENTER_LEFT); //Picture of player
+        BorderPane.setAlignment(playerImage, Pos.CENTER_RIGHT); //Picture of player
+        BorderPane.setAlignment(dialogPartnerImage, Pos.CENTER_LEFT); //Picture of dialog partner
         BorderPane.setAlignment(buttons, Pos.BOTTOM_CENTER); //HBox
 
         buttons.setAlignment(Pos.CENTER);
@@ -110,6 +134,14 @@ public class Text_Adventure_Class extends Application {
 
         dialogInfo.setSpacing(30);
         dialogInfo.setStyle("-fx-font-size: 15px");
+
+        dialogPartnerImage.setPreserveRatio(true);
+        dialogPartnerImage.setFitWidth(120);
+        dialogPartnerImage.setFitHeight(100);
+
+        playerImage.setPreserveRatio(true);
+        playerImage.setFitWidth(120);
+        playerImage.setFitHeight(100);
 
         text_Adventure_Main_BorderPane.setPadding(new Insets(45));
 
