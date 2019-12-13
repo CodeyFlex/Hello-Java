@@ -1,4 +1,4 @@
-package sql_Databases_Tutorial.com.daoimplementation;
+package sql_Databases_Tutorial.com.daoImplementation;
 
 import sql_Databases_Tutorial.com.dao.PersonDao;
 import sql_Databases_Tutorial.com.entities.Person;
@@ -18,7 +18,8 @@ public class PersonDaoImpl implements PersonDao {
         try {
             connection = ConnectionConfig.getConnection();
             statement = connection.createStatement();
-            statement.execute("CREATE TABLE IF NOT EXISTS person (id int primary key unique auto_increment," + "first_name varchar(55), last_name varchar(55))");
+            statement.execute("CREATE TABLE IF NOT EXISTS person (id int primary key unique auto_increment," + "name varchar(55), job varchar(55), race varchar(55), faction varchar(55))");
+            System.out.println("Create Table person");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -47,11 +48,13 @@ public class PersonDaoImpl implements PersonDao {
 
         try {
             connection = ConnectionConfig.getConnection();
-            preparedStatement = connection.prepareStatement("INSERT INTO person (first_name,last_name)" + "VALUES (?, ?)");
-            preparedStatement.setString(1, person.getFirstName());
-            preparedStatement.setString(2, person.getLastName());
+            preparedStatement = connection.prepareStatement("INSERT INTO person (name,job,race,faction)" + "VALUES (?, ?, ?, ?)");
+            preparedStatement.setString(1, person.getName());
+            preparedStatement.setString(2, person.getJob());
+            preparedStatement.setString(3, person.getRace());
+            preparedStatement.setString(4, person.getFaction());
             preparedStatement.executeUpdate();
-            System.out.println("INSERT INTO person (first_name,last_name)\" + \"VALUES (?, ?)");
+            System.out.println("INSERT INTO person (name,job,race,faction)\" + \"VALUES (?, ?, ?, ?)");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -88,8 +91,10 @@ public class PersonDaoImpl implements PersonDao {
 
             while (resultSet.next()) {
                 person.setId(resultSet.getInt("id"));
-                person.setFirstName(resultSet.getString("first_name"));
-                person.setLastName(resultSet.getString("last_name"));
+                person.setName(resultSet.getString("name"));
+                person.setJob(resultSet.getString("job"));
+                person.setJob(resultSet.getString("race"));
+                person.setJob(resultSet.getString("faction"));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -135,8 +140,10 @@ public class PersonDaoImpl implements PersonDao {
             while (resultSet.next()) {
                 Person person = new Person();
                 person.setId(resultSet.getInt("id"));
-                person.setFirstName(resultSet.getString("first_name"));
-                person.setLastName(resultSet.getString("last_name"));
+                person.setName(resultSet.getString("name"));
+                person.setJob(resultSet.getString("job"));
+                person.setJob(resultSet.getString("race"));
+                person.setJob(resultSet.getString("faction"));
 
                 persons.add(person);
             }
@@ -209,10 +216,12 @@ public class PersonDaoImpl implements PersonDao {
         try {
             connection = ConnectionConfig.getConnection();
             preparedStatement = connection.prepareStatement("UPDATE person SET " +
-                    "first_name = ?, last_name = ? WHERE id = ?");
+                    "name = ?, job = ?, race = ?, faction = ? WHERE id = ?");
             preparedStatement.setInt(1, id);
-            preparedStatement.setString(2, person.getFirstName());
-            preparedStatement.setString(3, person.getLastName());
+            preparedStatement.setString(2, person.getName());
+            preparedStatement.setString(3, person.getJob());
+            preparedStatement.setString(4, person.getRace());
+            preparedStatement.setString(5, person.getFaction());
             preparedStatement.executeUpdate();
 
             System.out.println("UPDATE person SET " +

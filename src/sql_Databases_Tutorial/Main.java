@@ -1,6 +1,6 @@
 package sql_Databases_Tutorial;
 
-import sql_Databases_Tutorial.com.daoimplementation.PersonDaoImpl;
+import sql_Databases_Tutorial.com.daoImplementation.PersonDaoImpl;
 import sql_Databases_Tutorial.com.entities.Person;
 
 import java.util.List;
@@ -20,7 +20,7 @@ public class Main {
 
         List<Person> persons = pdi.selectAll(); //Gets all the people in my database
         for (Person person : persons) {
-            System.out.println(person.getId() + ", " + person.getFirstName() + ", " + person.getLastName());
+            System.out.println(person.getId() + ", " + person.getName() + ", " + person.getJob());
         }
     }
 }

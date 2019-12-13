@@ -1,17 +1,25 @@
 package sql_Databases_Tutorial.com.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class ConnectionConfig {
 
-    public static Connection getConnection () {
-        Connection connection = null;
+    private static String username = "";
+    private static String password = "";
+    private static String url = "jdbc:mysql://localhost/test";
+    private static Connection connection;
+
+
+    public static Connection getConnection() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","", "");
-        } catch (Exception e) {
-            e.printStackTrace();
+            connection = DriverManager.getConnection(url, username, password);
+            System.out.println("connected");
+        } catch (SQLException ex) {
+            // log an exception. for example:
+            ex.printStackTrace();
         }
+
         return connection;
     }
 }

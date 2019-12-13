@@ -3,15 +3,19 @@ package sql_Databases_Tutorial.com.entities;
 public class Person {
 
     private int id;
-    private String firstName;
-    private String lastName;
+    private String name;
+    private String job;
+    private String race;
+    private String faction;
 
     public Person() {
 
     }
-    public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Person(String name, String job, String race, String faction) {
+        this.name = name;
+        this.job = job;
+        this.race = race;
+        this.faction = faction;
     }
 
     public int getId() {
@@ -22,19 +26,35 @@ public class Person {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getJob() {
+        return job;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public String getRace() {
+        return race;
+    }
+
+    public void setRace(String race) {
+        this.race = race;
+    }
+
+    public String getFaction() {
+        return faction;
+    }
+
+    public void setFaction(String faction) {
+        this.faction = faction;
     }
 }
